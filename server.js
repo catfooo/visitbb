@@ -1,6 +1,7 @@
 const express = require("express");
 const cheerio = require("cheerio");
-const puppeteer = require("puppeteer-core");
+//const puppeteer = require("puppeteer-core");
+const puppeteer = require("puppeteer");
 
 const app = express();
 
@@ -27,9 +28,13 @@ const overrides = {
 app.use(async (req, res) => {
   let browser;
   try {
+    //browser = await puppeteer.launch({
+      //executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      //headless: true,
+    //});
     browser = await puppeteer.launch({
-      executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
       headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"]
     });
     const page = await browser.newPage();
     //await page.goto("https://goarctica.com", { waitUntil: "networkidle2" });
