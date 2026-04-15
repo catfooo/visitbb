@@ -36,6 +36,7 @@ app.use(async (req, res) => {
       headless: true,
       args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
       //executablePath: await puppeteer.executablePath()
+      timeout: 60000
     });
     const page = await browser.newPage();
     
