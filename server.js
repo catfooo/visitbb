@@ -46,10 +46,15 @@ app.use(async (req, res) => {
     //await page.goto("https://goarctica.com", { waitUntil: "networkidle2" });
     const targetUrl = "https://goarctica.com" + req.originalUrl;
     //await page.goto(targetUrl, { waitUntil: "networkidle2" });
-    await page.goto(targetUrl, {
-      waitUntil: "domcontentloaded",
-      timeout: 30000
-    });
+    try {
+      await page.goto(targetUrl, {
+        waitUntil: "domcontentloaded",
+        timeout: 30000
+      });
+    } catch (e) {
+      console.error("PAGE GOTO FAILED:", e.message);
+      return res.status(500).send("Page load failed: " + e.message);
+    }
 
     let html = await page.content();
 
