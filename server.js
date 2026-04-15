@@ -142,26 +142,8 @@ $(node).replaceWith(translated);
 
     res.send($.html());
   } catch (err) {
-
-    //console.error(err);
-    //res.status(500).send("페이지 처리 중 오류 발생");
-
-    //console.error("FULL ERROR:", err);
-    //res.status(500).send(err.message);
-
-    console.error("FULL ERROR:", err);
-
-res.status(500).send(
-  JSON.stringify(
-    {
-      message: err.message,
-      stack: err.stack,
-    },
-    null,
-    2
-  )
-);
-
+    console.error(err);
+    res.status(500).send("페이지 처리 중 오류 발생");
   } finally {
     if (browser) await browser.close();
   }
