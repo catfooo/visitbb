@@ -34,7 +34,8 @@ app.use(async (req, res) => {
     //});
     browser = await puppeteer.launch({
       headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"]
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      executablePath: await puppeteer.executablePath()
     });
     const page = await browser.newPage();
     //await page.goto("https://goarctica.com", { waitUntil: "networkidle2" });
