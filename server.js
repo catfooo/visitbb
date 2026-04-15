@@ -33,7 +33,6 @@ app.use(async (req, res) => {
       //headless: true,
     //});
     browser = await puppeteer.launch({
-      executablePath: puppeteer.executablePath(),
       headless: true,
       args: ["--no-sandbox", "--disable-setuid-sandbox"]
     });
