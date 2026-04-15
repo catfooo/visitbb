@@ -38,9 +38,17 @@ app.use(async (req, res) => {
       //executablePath: await puppeteer.executablePath()
     });
     const page = await browser.newPage();
+    
+    page.setDefaultTimeout(30000);
+    page.setDefaultNavigationTimeout(30000);
+
     //await page.goto("https://goarctica.com", { waitUntil: "networkidle2" });
     const targetUrl = "https://goarctica.com" + req.originalUrl;
-    await page.goto(targetUrl, { waitUntil: "networkidle2" });
+    //await page.goto(targetUrl, { waitUntil: "networkidle2" });
+    await page.goto(targetUrl, {
+      waitUntil: "domcontentloaded",
+      timeout: 30000
+    });
 
     let html = await page.content();
 
