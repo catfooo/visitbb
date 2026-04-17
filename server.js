@@ -1,7 +1,7 @@
 const express = require("express");
 const cheerio = require("cheerio");
-const puppeteer = require("puppeteer-core");
-// const puppeteer = require("puppeteer");
+// const puppeteer = require("puppeteer-core");
+const puppeteer = require("puppeteer");
 
 const app = express();
 
@@ -28,16 +28,16 @@ const overrides = {
 app.use(async (req, res) => {
   let browser;
   try {
-    browser = await puppeteer.launch({
-      executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-      headless: true,
-    });
     // browser = await puppeteer.launch({
+    //   executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     //   headless: true,
-    //   args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
-    //   //executablePath: await puppeteer.executablePath()
-    //   timeout: 60000
     // });
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
+      //executablePath: await puppeteer.executablePath()
+      timeout: 60000
+    });
     const page = await browser.newPage();
     
     page.setDefaultTimeout(30000);
