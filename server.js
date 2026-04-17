@@ -32,10 +32,14 @@ app.use(async (req, res) => {
     //   executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     //   headless: true,
     // });
-    browser = await puppeteer.launch({
+    const browser = await puppeteer.launch({
       headless: true,
-      //executablePath: "/opt/render/.cache/puppeteer/chrome/linux-*/chrome-linux64/chrome",
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage"
+      ],
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH
     });
     const page = await browser.newPage();
     
