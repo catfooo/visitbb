@@ -34,9 +34,8 @@ app.use(async (req, res) => {
     // });
     browser = await puppeteer.launch({
       headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
-      //executablePath: await puppeteer.executablePath()
-      timeout: 60000
+      executablePath: "/opt/render/.cache/puppeteer/chrome/linux-*/chrome-linux64/chrome",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
     const page = await browser.newPage();
     
