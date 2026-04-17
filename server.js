@@ -32,7 +32,7 @@ app.use(async (req, res) => {
     //   executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     //   headless: true,
     // });
-    const browser = await puppeteer.launch({
+    browser = await puppeteer.launch({
       headless: true,
       args: [
         "--no-sandbox",
