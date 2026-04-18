@@ -47,7 +47,7 @@ app.use(async (req, res) => {
     page.setDefaultNavigationTimeout(30000);
 
     //await page.goto("https://goarctica.com", { waitUntil: "networkidle2" });
-    const targetUrl = "https://goarctica.com" + req.originalUrl;
+    const targetUrl = "https://google.com" + req.originalUrl;
     //await page.goto(targetUrl, { waitUntil: "networkidle2" });
     try {
       await page.goto(targetUrl, {
