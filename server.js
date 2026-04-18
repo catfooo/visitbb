@@ -33,12 +33,29 @@ app.use(async (req, res) => {
     //   headless: true,
     //   args: ["--no-sandbox", "--disable-setuid-sandbox"]
     // });
-    browser = await puppeteer.launch({
-      args: chromium.args,
-      defaultViewport: chromium.defaultViewport,
-      executablePath: await chromium.executablePath(),
-      headless: chromium.headless,
-    });
+    // browser = await puppeteer.launch({
+    //   args: chromium.args,
+    //   defaultViewport: chromium.defaultViewport,
+    //   executablePath: await chromium.executablePath(),
+    //   headless: chromium.headless,
+    // });
+    const isProd = process.env.NODE_ENV === "production";
+
+let browser;
+
+if (isProd) {
+  browser = await puppeteer.launch({
+    args: chromium.args,
+    defaultViewport: chromium.defaultViewport,
+    executablePath: await chromium.executablePath(),
+    headless: chromium.headless,
+  });
+} else {
+  const puppeteer = require("puppeteer"); // full version for local
+  browser = await puppeteer.launch({
+    headless: true,
+  });
+}
 
     const page = await browser.newPage();
 
@@ -51,7 +68,22 @@ app.use(async (req, res) => {
 
     const html = await page.content();
 
-    res.send(html);
+    // res.send(html);
+
+    const $ = cheerio.load(html);
+
+const textNodes = $("body").find("*").contents().filter(function () {
+  return this.type === "text" && this.data.trim().length > 0;
+});
+
+for (let i = 0; i < textNodes.length; i++) {
+  const node = textNodes[i];
+  const original = node.data.trim();
+  const translated = await translateText(original);
+  node.data = translated;
+}
+
+res.send($.html());
 
   } catch (err) {
     console.error(err);
