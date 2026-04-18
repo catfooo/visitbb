@@ -1,7 +1,8 @@
 const express = require("express");
 const cheerio = require("cheerio");
-// const puppeteer = require("puppeteer-core");
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
+// const puppeteer = require("puppeteer");
+const chromium = require("@sparticuz/chromium");
 
 const app = express();
 
@@ -28,9 +29,15 @@ app.use(async (req, res) => {
   let browser;
 
   try {
+    // browser = await puppeteer.launch({
+    //   headless: true,
+    //   args: ["--no-sandbox", "--disable-setuid-sandbox"]
+    // });
     browser = await puppeteer.launch({
-      headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"]
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless,
     });
 
     const page = await browser.newPage();
