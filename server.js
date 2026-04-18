@@ -1,7 +1,7 @@
 const express = require("express");
 const cheerio = require("cheerio");
-const puppeteer = require("puppeteer-core");
-// const puppeteer = require("puppeteer");
+// const puppeteer = require("puppeteer-core");
+const puppeteer = require("puppeteer");
 
 const app = express();
 
@@ -39,7 +39,7 @@ app.use(async (req, res) => {
         "--disable-setuid-sandbox",
         "--disable-dev-shm-usage"
       ],
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH
+      // executablePath: process.env.PUPPETEER_EXECUTABLE_PATH
     });
     const page = await browser.newPage();
     
