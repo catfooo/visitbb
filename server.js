@@ -59,7 +59,7 @@ if (isProd) {
 
     const page = await browser.newPage();
 
-    const targetUrl = "https://example.com";
+    const targetUrl = "https://goarctica.com";
 
     await page.goto(targetUrl, {
       waitUntil: "domcontentloaded",
