@@ -63,7 +63,7 @@ if (isProd) {
 
     await page.goto(targetUrl, {
       waitUntil: "networkidle2", 
-      timeout: 30000
+      timeout: 120000
     });
 
     console.log("Requested:", targetUrl);
