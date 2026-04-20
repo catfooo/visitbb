@@ -186,7 +186,7 @@ app.listen(PORT, () => {
 // 👇 KEEP ALIVE (ONLY ONCE)
 if (process.env.NODE_ENV === "production") {
   setInterval(() => {
-    fetch("https://your-site.onrender.com")
+    fetch("https://barentsburg.onrender.com")
       .then(() => console.log("keep-alive ping"))
       .catch(err => console.log("ping error:", err.message));
   }, 5 * 60 * 1000);
