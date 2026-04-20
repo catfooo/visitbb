@@ -59,12 +59,15 @@ if (isProd) {
 
     const page = await browser.newPage();
 
-    const targetUrl = "https://goarctica.com";
+    const targetUrl = "https://goarctica.com" + req.originalUrl;
 
     await page.goto(targetUrl, {
-      waitUntil: "domcontentloaded",
+      waitUntil: "networkidle2", 
       timeout: 30000
     });
+
+    console.log("Requested:", targetUrl);
+console.log("Final URL:", page.url());
 
     let html = await page.content();
 
@@ -179,3 +182,12 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Server running");
 });
+
+// 👇 KEEP ALIVE (ONLY ONCE)
+if (process.env.NODE_ENV === "production") {
+  setInterval(() => {
+    fetch("https://your-site.onrender.com")
+      .then(() => console.log("keep-alive ping"))
+      .catch(err => console.log("ping error:", err.message));
+  }, 5 * 60 * 1000);
+}
