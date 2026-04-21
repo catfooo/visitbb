@@ -41,7 +41,7 @@ app.use(async (req, res) => {
     // });
     const isProd = process.env.NODE_ENV === "production";
 
-let browser;
+//let browser;
 
 if (isProd) {
   browser = await puppeteer.launch({
