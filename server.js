@@ -73,6 +73,13 @@ console.log("Final URL:", page.url());
 
     const $ = cheerio.load(html);
 
+    // EN link to not be /
+    $('.t967__additional-langs a').each(function () {
+      if ($(this).text().trim() === "EN") {
+        $(this).attr("href", "https://goarctica.com/");
+      }
+    });
+
     const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
       // Skip elements that have no visible text
       return $(this).text().trim().length > 0;
