@@ -170,6 +170,17 @@ translated = translated.replace(/사람의 손길이 닿지 않은 자연이 시
 translated = translated.replace(/정착지인/g, "마을인");
 translated = translated.replace(/전설적인 피라미덴/g, "그리고 전설적인 피라미덴");
 translated = translated.replace(/정착지를/g, "마을을");
+translated = translated.replace(/블라티덴/g, "blåtiden");
+translated = translated.replace(/그 이후부터 5월 첫째 주까지 제공됩니다./g, "그로부터 5월 첫째 주까지 우리는 바렌츠부르크, 그루만트, 콜스베이 그리고 템펠피요르덴까지를 돌아보는 ");
+translated = translated.replace(/바렌츠부르크, 그루만트 & Colesbay 및 Tempelfjorden까지/g, "를 제공합니다");
+translated = translated.replace(/확장된 모험을 원하는 사람들을 위해 우리는 다음을 제공합니다./g, "확장된 모험을 원하는 사람들을 위해 우리는 ");
+translated = translated.replace(/, 군도의 서쪽 부분과/g, "를 제공하며, 이는 군도의 서쪽 부분과");
+translated = translated.replace(/롱이어비엔에서 스노모빌로 약 5~6시간이/g, "는 롱이어비엔에서 스노모빌로 약 5~6시간이");
+translated = translated.replace(/계획을 세우는 것이 좋습니다. 우리의/g, "계획을 세우는 것이 좋습니다. 우리의 ");
+translated = translated.replace(/4월은 우리 회사에 합류하기 가장 좋은 시기입니다./g, "4월은 ");
+translated = translated.replace(/는 군도의 가장 상징적인 장소로 여러분을 데려가는/g, "에 참여하기 가장 좋은 시기입니다. 이 투어는 군도의 가장 상징적인 장소로 여러분을 데려가는");
+translated = translated.replace(/5월 둘째 주까지 투어 운영을 중단하므로/g, "5월 둘째 주부터 투어 운영을 중단하므로");
+translated = translated.replace(/어렵습니다. 눈이 녹고 풍경이 변하면서 거의 아무것도 볼 수 없게 될 수도 있습니다./g, "어렵습니다. 눈이 녹고 풍경이 ");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
@@ -182,6 +193,20 @@ $(node).replaceWith(translated);
         }
       }
     }
+
+    // adding text at the end of specific container
+    const container = $("#accordion1_825002837 .t585__text");
+
+const textNodes = container.contents().filter(function () {
+  return this.type === "text";
+});
+
+// get last text node in that container
+const lastTextNode = textNodes.last()[0];
+
+if (lastTextNode && lastTextNode.data.trim() === ".") {
+  lastTextNode.data = "으로 변하면서 거의 아무것도 볼 수 없게 될 수도 있습니다.";
+}
 
     // bypass tilda zoom
     $("body").append(`
