@@ -154,6 +154,15 @@ translated = translated.replace(/아트아틱 갤러리/g, "북극 예술박물�
 translated = translated.replace(/여행할 때/g, "여행 시기");
 translated = translated.replace(/우리 정착지에 가는 방법/g, "우리의 마을로 오시는 길");
 translated = translated.replace(/현대 북극 생활/g, "현대적인 북극 생활");
+translated = translated.replace(/그루먼트/g, "그루만트");
+translated = translated.replace(/모험 및 발견/g, "모험 및 탐험");
+translated = translated.replace(/일년 내내 경험을/g, "연중 다양한 경험을");
+translated = translated.replace(/광산 역사가 문화와 연중 내내 접대되는/g, "탄광의 역사와 문화를 연중 내내 경험할 수 있는");
+translated = translated.replace(/북극 모험 투어 및 목적지/g, "북극 어드벤처 투어와 여행지");
+translated = translated.replace(/사람의 손길이 닿지 않은 자연이 시간이 멈춰버린 버려진 아름다움을 둘러싸고 있는/g, "사람의 손길이 닿지 않은 자연과 시간이 멈춘 듯한 폐허의 아름다움이 공존하는,");
+translated = translated.replace(/정착지인/g, "마을인");
+translated = translated.replace(/전설적인 피라미덴/g, "그리고 전설적인 피라미덴");
+translated = translated.replace(/정착지를/g, "마을을");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
@@ -219,7 +228,6 @@ app.listen(PORT, () => {
   console.log("Server running");
 });
 
-// 👇 KEEP ALIVE (ONLY ONCE)
 if (process.env.NODE_ENV === "production") {
   setInterval(() => {
     fetch("https://barentsburg.onrender.com")
