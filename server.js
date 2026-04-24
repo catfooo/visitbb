@@ -80,6 +80,18 @@ console.log("Final URL:", page.url());
       }
     });
 
+    // tilda link fix
+    $('a[href]').each(function () {
+      const href = $(this).attr('href');
+    
+      if (!href) return;
+    
+      if (href.includes('tilda.ru')) {
+        const path = href.replace(/https?:\/\/tilda\.ru/, '');
+        $(this).attr('href', path || '/');
+      }
+    });
+
     const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
       // Skip elements that have no visible text
       return $(this).text().trim().length > 0;
