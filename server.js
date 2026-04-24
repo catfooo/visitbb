@@ -165,7 +165,7 @@ translated = translated.replace(/그루먼트/g, "그루만트");
 translated = translated.replace(/모험 및 발견/g, "모험 및 탐험");
 translated = translated.replace(/일년 내내 경험을/g, "연중 다양한 경험을");
 translated = translated.replace(/광산 역사가 문화와 연중 내내 접대되는/g, "탄광의 역사와 문화를 연중 내내 경험할 수 있는");
-translated = translated.replace(/북극 모험 투어 및 목적지/g, "북극 어드벤처 투어와 여행지");
+translated = translated.replace(/북극 모험 투어 및 목적지/g, "북극 어드벤처 투어와 방문 가능 지역들");
 translated = translated.replace(/사람의 손길이 닿지 않은 자연이 시간이 멈춰버린 버려진 아름다움을 둘러싸고 있는/g, "사람의 손길이 닿지 않은 자연과 시간이 멈춘 듯한 폐허의 아름다움이 공존하는,");
 translated = translated.replace(/정착지인/g, "마을인");
 translated = translated.replace(/전설적인 피라미덴/g, "그리고 전설적인 피라미덴");
@@ -206,6 +206,25 @@ const lastTextNode = textNodes.last()[0];
 
 if (lastTextNode && lastTextNode.data.trim() === ".") {
   lastTextNode.data = "으로 변하면서 거의 아무것도 볼 수 없게 될 수도 있습니다.";
+}
+
+// for prod, logic works differently(puppeteer -> sparticuz), so need to remove certain text additionally
+const container1 = $("#accordion1_825002837 .t585__text");
+
+const fullText = container1.text();
+
+const targetStart = "날씨는 예측하기가 매우 어렵기 때문에 눈이 녹고 풍경이";
+const unwanted = " 변하면서 거의 아무것도 볼 수 없게 될 수도 있습니다.";
+
+if (fullText.includes(targetStart + unwanted)) {
+  const newText = fullText.replace(unwanted, "");
+
+  // replace ONLY text nodes inside container 
+  container1.contents().each(function () {
+    if (this.type === "text") {
+      this.data = this.data.replace(unwanted, "");
+    }
+  });
 }
 
     // bypass tilda zoom
