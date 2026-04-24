@@ -181,6 +181,14 @@ translated = translated.replace(/4월은 우리 회사에 합류하기 가장 �
 translated = translated.replace(/는 군도의 가장 상징적인 장소로 여러분을 데려가는/g, "에 참여하기 가장 좋은 시기입니다. 이 투어는 군도의 가장 상징적인 장소로 여러분을 데려가는");
 translated = translated.replace(/5월 둘째 주까지 투어 운영을 중단하므로/g, "5월 둘째 주부터 투어 운영을 중단하므로");
 translated = translated.replace(/어렵습니다. 눈이 녹고 풍경이 변하면서 거의 아무것도 볼 수 없게 될 수도 있습니다./g, "어렵습니다. 눈이 녹고 풍경이 ");
+//translated = translated.replace(/RIB 보트가 바다를 항해하기 시작하고/g, "RIB 보트(고속 고무보트)가 바다를 항해하기 시작하고");
+translated = translated.replace(/6월부터 8월 말까지 제공됩니다./g, "6월부터 8월 말까지는");
+translated = translated.replace(/, 계절 조건에 따라 야생 동물과 빙하 전망을 감상할 수 있는 최적의 경로를 선택하는 유연한 "오늘의 어획량" 프로그램이 특징입니다. 우리의/g, "를 운영하며, 계절과 날씨에 따라 최적의 야생동물 관찰 및 빙하 경로를 선택하는 유연한 “오늘의 코스(Catch of the Day)” 프로그램이 포함되어 있습니다. 또한 6월 초부터 9월까지는");
+translated = translated.replace(/6월 초부터 9월까지 운행되며 이 러시아 마을을 탐험하고 허스키 개썰매 타기를 즐길 수 있는 기회를 제공합니다. 트레킹을 좋아하는 분들을 위해 추천해 드립니다./g, "를 통해 이 러시아 정착지를 탐험하고 허스키 개썰매 체험도 즐기실 수 있습니다. 트레킹을 좋아하시는 분들을 위해 아늑한 캐빈에서 숙박하는");
+translated = translated.replace(/스발바르의 황야에 푹 빠져들기에 완벽한 아늑한 캐빈 스테이를 제공합니다./g, "도 준비되어 있어, 스발바르의 대자연을 깊이 있게 경험하실 수 있습니다.");
+translated = translated.replace(/피라미덴 베이의 얼음이 녹는 6월 중순부터 9월 말까지 우리와 함께하실 수 있습니다./g, "6월 중순, 피라미덴 만의 얼음이 녹기 시작하는 시기부터 9월 말까지는");
+translated = translated.replace(/, 이 버려진 정착지의 매혹적인 역사와 아름다움을 발견하세요./g, "에 참여하실 수 있으며, 이 버려진 정착지의 매혹적인 역사와 아름다움을 만나보실 수 있습니다.");
+translated = translated.replace(/10월 첫째 주 이후에는 투어를 일시 중지합니다. 날씨는 예측하기가 매우 어렵습니다. 기온이 낮아지고 북극의 밤이 서서히 돌아오며 풍경이/g, "투어는 10월 첫째 주 이후에는 잠시 중단됩니다. 이 시기의 날씨는 매우 예측하기 어렵고, 기온이 떨어지며 극야가 점차 시작되고 풍경이");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
@@ -229,6 +237,20 @@ if (fullText.includes(combined)) {
       removedOnce = true;
     }
   });
+}
+
+    // adding text at the end of specific container
+    const container2 = $("#accordion2_825002837 .t585__text");
+
+const textNodes2 = container2.contents().filter(function () {
+  return this.type === "text";
+});
+
+// get last text node in that container
+const lastTextNode2 = textNodes2.last()[0];
+
+if (lastTextNode2 && lastTextNode2.data.trim() === ".") {
+  lastTextNode2.data = "로 바뀌기 때문에 기대만큼 많은 것을 보지 못할 수도 있습니다.";
 }
 
     // bypass tilda zoom
