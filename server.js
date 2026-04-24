@@ -225,7 +225,7 @@ if (fullText.includes(combined)) {
     if (this.type !== "text") return;
 
     if (!removedOnce && this.data.includes(combined)) {
-      this.data = this.data.replace(combined, targetStart);
+      this.data = this.data.replace(combined, targetStart + " ");
       removedOnce = true;
     }
   });
