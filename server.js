@@ -216,13 +216,17 @@ const fullText = container1.text();
 const targetStart = "날씨는 예측하기가 매우 어렵기 때문에 눈이 녹고 풍경이";
 const unwanted = " 변하면서 거의 아무것도 볼 수 없게 될 수도 있습니다.";
 
-if (fullText.includes(targetStart + unwanted)) {
-  const newText = fullText.replace(unwanted, "");
+const combined = targetStart + unwanted;
 
-  // replace ONLY text nodes inside container 
+if (fullText.includes(combined)) {
+  let removedOnce = false;
+
   container1.contents().each(function () {
-    if (this.type === "text") {
-      this.data = this.data.replace(unwanted, "");
+    if (this.type !== "text") return;
+
+    if (!removedOnce && this.data.includes(combined)) {
+      this.data = this.data.replace(combined, targetStart);
+      removedOnce = true;
     }
   });
 }
