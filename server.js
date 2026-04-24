@@ -213,7 +213,7 @@ const container1 = $("#accordion1_825002837 .t585__text");
 
 const fullText = container1.text();
 
-const targetStart = "날씨는 예측하기가 매우 어렵기 때문에 눈이 녹고 풍경이 ";
+const targetStart = "날씨는 예측하기가 매우 어렵기 때문에 눈이 녹고 풍경이";
 const unwanted = " 변하면서 거의 아무것도 볼 수 없게 될 수도 있습니다.";
 
 const combined = targetStart + unwanted;
