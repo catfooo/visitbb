@@ -25,39 +25,36 @@ const overrides = {
   //"MORE": "더 보기",
 };
 
-app.use(async (req, res) => {
-  let browser;
+let browser;
 
-  try {
-    // browser = await puppeteer.launch({
-    //   headless: true,
-    //   args: ["--no-sandbox", "--disable-setuid-sandbox"]
-    // });
-    // browser = await puppeteer.launch({
-    //   args: chromium.args,
-    //   defaultViewport: chromium.defaultViewport,
-    //   executablePath: await chromium.executablePath(),
-    //   headless: chromium.headless,
-    // });
-    const isProd = process.env.NODE_ENV === "production";
+async function getBrowser() {
+  if (browser) return browser;
 
-//let browser;
+  const isProd = process.env.NODE_ENV === "production";
 
-if (isProd) {
-  browser = await puppeteer.launch({
-    args: chromium.args,
-    defaultViewport: chromium.defaultViewport,
-    executablePath: await chromium.executablePath(),
-    headless: chromium.headless,
-  });
-} else {
-  const puppeteer = require("puppeteer"); // full version for local
+  if (isProd) {
+    browser = await puppeteer.launch({
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless,
+    });
+  } else {
+    const puppeteer = require("puppeteer"); // full version for local
   browser = await puppeteer.launch({
     headless: true,
   });
+  }
+
+  return browser;
 }
 
-    const page = await browser.newPage();
+app.use(async (req, res) => {
+  const browser = await getBrowser();
+  let page;
+
+  try {
+    page = await browser.newPage();
 
     const targetUrl = "https://goarctica.com" + req.originalUrl;
 
@@ -306,7 +303,7 @@ document.addEventListener("click", function(e) {
     console.error(err);
     res.status(500).send(err.message);
   } finally {
-    if (browser) await browser.close();
+    if (page) await page.close();
   }
 
 });
