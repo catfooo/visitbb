@@ -105,7 +105,9 @@ app.use(async (req, res) => {
   
     const cached = cache.get(cacheKey);
   
-    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    // no 30 min cache
+    // if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    if (cached) {  
       console.log("CACHE HIT:", cacheKey);
       return res.send(cached.html);
     }
