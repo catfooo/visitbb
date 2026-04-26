@@ -52,6 +52,54 @@ async function getBrowser() {
   return browser;
 }
 
+// all route warm
+async function warmAllRoutes() {
+  const visited = new Set();
+  const queue = ["/"];
+
+  while (queue.length) {
+    const route = queue.shift();
+
+    if (visited.has(route)) continue;
+    visited.add(route);
+
+    try {
+      console.log("Warming:", route);
+
+      // Warm your translated route (fills cache)
+      await fetch(`https://barentsburg.onrender.com${route}`);
+
+      // Crawl original site to find more internal links
+      const res = await fetch(`https://goarctica.com${route}`);
+      const html = await res.text();
+
+      const $ = cheerio.load(html);
+
+      $('a[href]').each((_, el) => {
+        const href = $(el).attr('href');
+
+        if (
+          href &&
+          href.startsWith('/') &&
+          !href.startsWith('//') &&
+          !href.includes('#') &&
+          !visited.has(href)
+        ) {
+          queue.push(href);
+        }
+      });
+
+      // small delay to avoid hammering server
+      await new Promise(r => setTimeout(r, 500));
+
+    } catch (err) {
+      console.log("Warm failed:", route, err.message);
+    }
+  }
+
+  console.log("Finished warming all routes");
+}
+
 app.use(async (req, res) => {
     const cacheKey = req.originalUrl;
   
@@ -314,7 +362,7 @@ document.addEventListener("click", function(e) {
 `);
 
     //res.send($.html());
-    
+
     const finalHtml = $.html();
 
 cache.set(cacheKey, {
@@ -337,6 +385,7 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log("Server running");
+  warmAllRoutes();
 });
 
 if (process.env.NODE_ENV === "production") {
