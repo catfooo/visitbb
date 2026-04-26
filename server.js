@@ -6,6 +6,9 @@ const chromium = require("@sparticuz/chromium");
 
 const app = express();
 
+const cache = new Map();
+const CACHE_TTL = 1000 * 60 * 30; // 30 minutes
+
 // Google Translate
 async function translateText(text) {
   const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ko&dt=t&q=${encodeURIComponent(text)}`;
@@ -50,6 +53,18 @@ async function getBrowser() {
 }
 
 app.use(async (req, res) => {
+    const cacheKey = req.originalUrl;
+  
+    const cached = cache.get(cacheKey);
+  
+    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+      console.log("CACHE HIT:", cacheKey);
+      return res.send(cached.html);
+    }
+  
+    console.log("CACHE MISS:", cacheKey);
+
+
   const browser = await getBrowser();
   let page;
 
@@ -298,7 +313,17 @@ document.addEventListener("click", function(e) {
 </script>
 `);
 
-    res.send($.html());
+    //res.send($.html());
+    
+    const finalHtml = $.html();
+
+cache.set(cacheKey, {
+  html: finalHtml,
+  timestamp: Date.now(),
+});
+
+res.send(finalHtml);
+
   } catch (err) {
     console.error(err);
     res.status(500).send(err.message);
