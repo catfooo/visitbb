@@ -7,7 +7,7 @@ const chromium = require("@sparticuz/chromium");
 const app = express();
 
 const cache = new Map();
-const CACHE_TTL = 1000 * 60 * 30; // 30 minutes
+const CACHE_TTL = 1000 * 60 * 60; // 60 minutes
 
 // Google Translate
 async function translateText(text) {
