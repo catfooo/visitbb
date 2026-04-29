@@ -125,9 +125,9 @@ async function warmLoop() {
 
     await warmAllRoutes();
 
-    console.log("Warm cycle finished. Sleeping 50 min...");
+    console.log("Warm cycle finished. Sleeping 5 min...");
 
-    await new Promise(r => setTimeout(r, 50 * 60 * 1000));
+    await new Promise(r => setTimeout(r, 5 * 60 * 1000));
   }
 }
 
