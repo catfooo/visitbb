@@ -2,3 +2,4 @@ node_modules
 .cache
 server copy.js
 server copy *.js
+!server copy 7.js
