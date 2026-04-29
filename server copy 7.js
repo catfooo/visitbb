@@ -68,8 +68,10 @@ async function warmAllRoutes() {
     try {
       console.log("Warming:", route);
 
-      // Warm your translated route (fills cache)
-      await fetch(`https://barentsburg.onrender.com${route}`);
+      // // Warm your translated route (fills cache)
+      // await fetch(`https://barentsburg.onrender.com${route}`);
+      // Warm route and mark as warm request
+await fetch(`https://barentsburg.onrender.com${route}?warm=1`);
 
       // Crawl original site to find more internal links
       const res = await fetch(`https://goarctica.com${route}`);
@@ -130,15 +132,29 @@ async function warmLoop() {
 }
 
 app.use(async (req, res) => {
-    const cacheKey = req.originalUrl;
+    // const cacheKey = req.originalUrl;
+    const cacheKey = req.path;
+
+    //Add Warm Detection In Handler
+    const isWarmRequest = req.query.warm === "1";
   
     const cached = cache.get(cacheKey);
   
     
+    // if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    //   // no 30 min cache
+    // // if (cached) {  
+    //   console.log("CACHE HIT:", cacheKey);
+    //   return res.send(cached.html);
+    // }
     if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
-      // no 30 min cache
-    // if (cached) {  
-      console.log("CACHE HIT:", cacheKey);
+      if (isWarmRequest) {
+        cached.timestamp = Date.now();
+        console.log("CACHE TOUCHED:", cacheKey);
+      } else {
+        console.log("CACHE HIT:", cacheKey);
+      }
+    
       return res.send(cached.html);
     }
   
