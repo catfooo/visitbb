@@ -479,13 +479,30 @@ const PORT = process.env.PORT || 3000;
 //   //warmAllRoutes();
 //   warmLoop();
 // });
-app.listen(PORT, async () => {
-  console.log("Server running");
-  // //warmAllRoutes();
-  // warmLoop();
+// app.listen(PORT, async () => {
+//   console.log("Server running");
+//   // //warmAllRoutes();
+//   // warmLoop();
 
-  await warmAllRoutes(); // immediate startup warm
-  warmLoop();            // then daily at 4AM Korea
+//   await warmAllRoutes(); // immediate startup warm
+//   warmLoop();            // then daily at 4AM Korea
+// });
+//right after server restart, startup warm makes server busy
+app.listen(PORT, () => {
+  console.log("Server running");
+
+  // Start daily scheduler immediately
+  warmLoop();
+
+  // Delayed startup warm after 5 minutes
+  setTimeout(async () => {
+    try {
+      console.log("Starting delayed startup warm...");
+      await warmAllRoutes();
+    } catch (err) {
+      console.log("Startup warm failed:", err.message);
+    }
+  }, 5 * 60 * 1000);
 });
 
 if (process.env.NODE_ENV === "production") {
