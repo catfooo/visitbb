@@ -488,8 +488,10 @@ const PORT = process.env.PORT || 3000;
 //   warmLoop();            // then daily at 4AM Korea
 // });
 //right after server restart, startup warm makes server busy
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log("Server running");
+
+  await warmAllRoutes(); // immediate startup warm
 
   // Start daily scheduler immediately
   warmLoop();
