@@ -9,7 +9,8 @@ const chromium = require("@sparticuz/chromium");
 const app = express();
 
 const cache = new Map();
-const CACHE_TTL = 1000 * 60 * 60; // 60 minutes
+//const CACHE_TTL = 1000 * 60 * 60; // 60 minutes
+const CACHE_TTL = 1000 * 60 * 60 * 24; // 24 hours
 
 // Google Translate
 async function translateText(text) {
@@ -125,9 +126,14 @@ async function warmLoop() {
 
     await warmAllRoutes();
 
-    console.log("Warm cycle finished. Sleeping 5 min...");
+    // console.log("Warm cycle finished. Sleeping 5 min...");
 
-    await new Promise(r => setTimeout(r, 5 * 60 * 1000));
+    // await new Promise(r => setTimeout(r, 5 * 60 * 1000));
+
+    // warm loop sleep 23 hr
+    console.log("Warm cycle finished. Sleeping 23 hours...");
+
+await new Promise(r => setTimeout(r, 23 * 60 * 60 * 1000));
   }
 }
 
@@ -147,14 +153,21 @@ app.use(async (req, res) => {
     //   console.log("CACHE HIT:", cacheKey);
     //   return res.send(cached.html);
     // }
-    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
-      if (isWarmRequest) {
-        cached.timestamp = Date.now();
-        console.log("CACHE TOUCHED:", cacheKey);
-      } else {
-        console.log("CACHE HIT:", cacheKey);
-      }
+    // if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    //   if (isWarmRequest) {
+    //     cached.timestamp = Date.now();
+    //     console.log("CACHE TOUCHED:", cacheKey);
+    //   } else {
+    //     console.log("CACHE HIT:", cacheKey);
+    //   }
+      
+      
     
+    //   return res.send(cached.html);
+    // }
+    // remove timestamp refresh on warm hits
+    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+      console.log(isWarmRequest ? "WARM HIT:" : "CACHE HIT:", cacheKey);
       return res.send(cached.html);
     }
   
