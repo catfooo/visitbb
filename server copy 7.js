@@ -120,20 +120,50 @@ await fetch(`https://barentsburg.onrender.com${route}?warm=1`);
 //     // wait before re-warming
 //     await new Promise(r => setTimeout(r, 5 * 60 * 1000));
 // }
+// async function warmLoop() {
+//   while (true) {
+//     console.log("Starting warm cycle...");
+
+//     await warmAllRoutes();
+
+//     // console.log("Warm cycle finished. Sleeping 5 min...");
+
+//     // await new Promise(r => setTimeout(r, 5 * 60 * 1000));
+
+//     // warm loop sleep 23 hr
+//     console.log("Warm cycle finished. Sleeping 23 hours...");
+
+// await new Promise(r => setTimeout(r, 23 * 60 * 60 * 1000));
+//   }
+// }
+//warmloop starts at 4am kst
 async function warmLoop() {
   while (true) {
-    console.log("Starting warm cycle...");
+    const now = new Date();
 
+    // Current time in Korea (UTC+9)
+    const koreaNow = new Date(
+      now.toLocaleString("en-US", { timeZone: "Asia/Seoul" })
+    );
+
+    // Next 4:00 AM Korea time
+    const nextWarm = new Date(koreaNow);
+    nextWarm.setHours(4, 0, 0, 0);
+
+    if (koreaNow >= nextWarm) {
+      nextWarm.setDate(nextWarm.getDate() + 1);
+    }
+
+    const msUntilWarm = nextWarm - koreaNow;
+
+    console.log(
+      `Next warm scheduled for Korea 4:00 AM in ${Math.round(msUntilWarm / 1000 / 60)} minutes`
+    );
+
+    await new Promise(r => setTimeout(r, msUntilWarm));
+
+    console.log("Starting scheduled warm cycle (Korea 4AM)...");
     await warmAllRoutes();
-
-    // console.log("Warm cycle finished. Sleeping 5 min...");
-
-    // await new Promise(r => setTimeout(r, 5 * 60 * 1000));
-
-    // warm loop sleep 23 hr
-    console.log("Warm cycle finished. Sleeping 23 hours...");
-
-await new Promise(r => setTimeout(r, 23 * 60 * 60 * 1000));
   }
 }
 
@@ -444,10 +474,18 @@ res.send(finalHtml);
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
+// app.listen(PORT, () => {
+//   console.log("Server running");
+//   //warmAllRoutes();
+//   warmLoop();
+// });
+app.listen(PORT, async () => {
   console.log("Server running");
-  //warmAllRoutes();
-  warmLoop();
+  // //warmAllRoutes();
+  // warmLoop();
+
+  await warmAllRoutes(); // immediate startup warm
+  warmLoop();            // then daily at 4AM Korea
 });
 
 if (process.env.NODE_ENV === "production") {
