@@ -494,15 +494,15 @@ app.listen(PORT, () => {
   // Start daily scheduler immediately
   warmLoop();
 
-  // Delayed startup warm after 5 minutes
-  setTimeout(async () => {
-    try {
-      console.log("Starting delayed startup warm...");
-      await warmAllRoutes();
-    } catch (err) {
-      console.log("Startup warm failed:", err.message);
-    }
-  }, 5 * 60 * 1000);
+  // // Delayed startup warm after 5 minutes
+  // setTimeout(async () => {
+  //   try {
+  //     console.log("Starting delayed startup warm...");
+  //     await warmAllRoutes();
+  //   } catch (err) {
+  //     console.log("Startup warm failed:", err.message);
+  //   }
+  // }, 5 * 60 * 1000);
 });
 
 if (process.env.NODE_ENV === "production") {
