@@ -54,12 +54,17 @@ async function getBrowser() {
 }
 
 app.use(async (req, res) => {
-    const cacheKey = req.originalUrl;
+    //const cacheKey = req.originalUrl;
+    const cacheKey = req.path;
+
+    //Add Warm Detection In Handler
+    const isWarmRequest = req.query.warm === "1";
   
     const cached = cache.get(cacheKey);
   
     if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
-      console.log("CACHE HIT:", cacheKey);
+      //console.log("CACHE HIT:", cacheKey);
+      console.log(isWarmRequest ? "WARM HIT:" : "CACHE HIT:", cacheKey);
       return res.send(cached.html);
     }
   
