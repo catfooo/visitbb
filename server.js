@@ -63,6 +63,9 @@ app.use(async (req, res) => {
     const cached = cache.get(cacheKey);
   
     if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+      if (isWarmRequest) {
+        cached.timestamp = Date.now();
+      }
       //console.log("CACHE HIT:", cacheKey);
       console.log(isWarmRequest ? "WARM HIT:" : "CACHE HIT:", cacheKey);
       return res.send(cached.html);
