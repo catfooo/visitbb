@@ -319,6 +319,18 @@ document.addEventListener("click", function(e) {
 
     document.body.appendChild(overlay);
 });
+
+//popup when submit
+document.addEventListener("click", function(e) {
+
+  const btn = e.target.closest('#form819685955 button[type="submit"]');
+
+  if (btn) {
+    alert("문의는 카카오톡(catfoo)으로 부탁드립니다");
+  }
+
+});
+
 </script>
 `);
 
