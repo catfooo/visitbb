@@ -222,6 +222,7 @@ translated = translated.replace(/스발바르의 황야에 푹 빠져들기에 �
 translated = translated.replace(/피라미덴 베이의 얼음이 녹는 6월 중순부터 9월 말까지 우리와 함께하실 수 있습니다./g, "6월 중순, 피라미덴 만의 얼음이 녹기 시작하는 시기부터 9월 말까지는");
 translated = translated.replace(/, 이 버려진 정착지의 매혹적인 역사와 아름다움을 발견하세요./g, "에 참여하실 수 있으며, 이 버려진 정착지의 매혹적인 역사와 아름다움을 만나보실 수 있습니다.");
 translated = translated.replace(/10월 첫째 주 이후에는 투어를 일시 중지합니다. 날씨는 예측하기가 매우 어렵습니다. 기온이 낮아지고 북극의 밤이 서서히 돌아오며 풍경이/g, "투어는 10월 첫째 주 이후에는 잠시 중단됩니다. 이 시기의 날씨는 매우 예측하기 어렵고, 기온이 떨어지며 극야가 점차 시작되고 풍경이");
+translated = translated.replace(/피라미덴로/g, "피라미덴으로");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
