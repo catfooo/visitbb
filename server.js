@@ -262,7 +262,7 @@ translated = translated.replace(/우리의 개집 부지를 둘러보며/g, "켄
 translated = translated.replace(/우리 설립의/g, "이곳의");
 translated = translated.replace(/얻으십시오. 무제한의 시간을/g, "얻으십시오. 무제한의 시간으로");
 translated = translated.replace(/바렌츠부르크(바렌츠부르크)/g, "바렌츠부르크");
-translated = translated.replace(/NOK 790 단축 및 NOK 1190 아버지/g, "짧은 코스 790 NOK & 긴 코스 1190 NOK");
+translated = translated.replace(/NOK 790 단축 및 NOK 1190 아버지/g, "짧은 일정 790 NOK & 긴 일정 1190 NOK");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
