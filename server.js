@@ -236,6 +236,7 @@ translated = translated.replace(/글쎄, 우리 피트니스/g, "우리 피트�
 translated = translated.replace(/모든 분동 및/g, "모든 웨이트 및");
 translated = translated.replace(/그만큼 수영장/g, "수영장");
 translated = translated.replace(/닫은/g, "휴무");
+translated = translated.replace(/그만큼/g, "");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
