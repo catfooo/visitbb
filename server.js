@@ -242,6 +242,9 @@ translated = translated.replace(/이면 충분/g, "nok");
 translated = translated.replace("개/그룹", "nok/그룹");
 translated = translated.replace("명/인", "nok/인");
 translated = translated.replace(/북한 사람들/g, "북쪽 사람들");
+translated = translated.replace(/홍보/g, "");
+translated = translated.replace(/이자형/g, "");
+translated = translated.replace(/IC/g, "입장료");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
