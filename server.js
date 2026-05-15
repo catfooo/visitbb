@@ -231,6 +231,9 @@ translated = translated.replace(/금발/g, "블론드");
 translated = translated.replace(/몰래 플래터/g, "스낵 플래터");
 translated = translated.replace(/원시인 갈비/g, "캐이브맨 갈비");
 translated = translated.replace(/С초콜릿칩쿠키/g, "초콜릿칩쿠키");
+translated = translated.replace(/그만큼 SWIMMINGPOOL/g, "SWIMMINGPOOL");
+translated = translated.replace(/글쎄, 우리 피트니스/g, "우리 피트니스");
+translated = translated.replace(/모든 분동 및/g, "모든 웨이트 및");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
