@@ -227,6 +227,10 @@ translated = translated.replace(/피라미덴를/g, "피라미덴을");
 translated = translated.replace(/정착지/g, "마을");
 translated = translated.replace(/충분한/g, "NOK");
 translated = translated.replace(/90 NOK0/g, "900 NOK");
+translated = translated.replace(/금발/g, "블론드");
+translated = translated.replace(/몰래 플래터/g, "스낵 플래터");
+translated = translated.replace(/원시인 갈비/g, "캐이브맨 갈비");
+translated = translated.replace(/С초콜릿칩쿠키/g, "초콜릿칩쿠키");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
