@@ -245,6 +245,14 @@ translated = translated.replace(/북한 사람들/g, "북쪽 사람들");
 translated = translated.replace(/홍보/g, "");
 translated = translated.replace(/이자형/g, "");
 translated = translated.replace(/IC/g, "입장료");
+translated = translated.replace(/내 거/g, "광산");
+translated = translated.replace(/독특한 E를 제공하는 독특한 장소/g, "");
+translated = translated.replace(/CE/g, "");
+translated = translated.replace(/엑스페리엔/g, "독특한 경험을 선사하는 특별한 장소");
+translated = translated.replace(/놀랍다/g, "");
+translated = translated.replace(/g 광산과 그 노동자의 내용물에 관한 사실./g, "");
+translated = translated.replace(/때로는 광산에 대한 통찰력도 제공합니다./g, "광산과 그곳에서 일했던 노동자들에 관한 때로는 놀라운 이야기들도 들려줍니다");
+translated = translated.replace(/케이./g, "");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
