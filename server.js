@@ -258,6 +258,11 @@ translated = translated.replace(/바르 크라신/g, "바 크라신");
 translated = translated.replace(/노르웨이 인/g, "노르웨이");
 translated = translated.replace(/덴마크 말/g, "덴마크");
 translated = translated.replace(/스웨덴어/g, "스웨덴");
+translated = translated.replace(/우리의 개집 부지를 둘러보며/g, "켄넬 투어에 참여하여");
+translated = translated.replace(/우리 설립의/g, "이곳의");
+translated = translated.replace(/얻으십시오. 무제한의 시간을/g, "얻으십시오. 무제한의 시간으로");
+translated = translated.replace(/바렌츠부르크(바렌츠부르크)/g, "바렌츠부르크");
+translated = translated.replace(/NOK 790 단축 및 NOK 1190 아버지/g, "짧은 코스 790 NOK & 긴 코스 1190 NOK");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
