@@ -295,6 +295,7 @@ translated = translated.replace(/노르덴스키올드 빙하와 스발바르 �
 translated = translated.replace(/숨겨진 보석/g, "숨겨진 명소");
 translated = translated.replace(/극지의 날/g, "백야");
 translated = translated.replace(/1 Pyramid 레스토랑에서 점심 식사/g, "피라미덴 레스토랑에서 1회 점심 식사");
+translated = translated.replace(/황야 사파리/g, "야생 탐험 사파리");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
