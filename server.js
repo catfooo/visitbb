@@ -113,6 +113,12 @@ console.log("Final URL:", page.url());
       }
     });
 
+    // fix only this specific hiking link
+$('#rec822566513 a[href="/barentsburgsightseeinghiking"]').attr(
+  "href",
+  "/pyramidensightseeinghiking"
+);
+
     const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
       // Skip elements that have no visible text
       return $(this).text().trim().length > 0;
