@@ -327,9 +327,60 @@ if (lastTextNode2 && lastTextNode2.data.trim() === ".") {
   lastTextNode2.data = "로 바뀌기 때문에 기대만큼 많은 것을 보지 못할 수도 있습니다.";
 }
 
-    // bypass tilda zoom
+    
     $("body").append(`
 <script>
+// tilda slide fix
+// ✅ slider CSS
+const style = document.createElement("style");
+style.innerHTML = \`
+.simple-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+}
+
+.simple-slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.simple-slide {
+  min-width: 100%;
+}
+
+.simple-slide img {
+  width: 100%;
+  display: block;
+}
+
+.simple-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.simple-arrow.left {
+  left: 10px;
+}
+
+.simple-arrow.right {
+  right: 10px;
+}
+\`;
+
+document.head.appendChild(style);
+
+
+// bypass tilda zoom
 document.addEventListener("click", function(e) {
     const el = e.target.closest('.t-zoomable');
     if (!el) return;
@@ -372,6 +423,55 @@ document.addEventListener("click", function(e) {
   }
 
 });
+
+
+
+// slider replacement
+document.querySelectorAll('.t-slds').forEach((slider, index) => {
+
+  const images = [...slider.querySelectorAll('img')]
+    .map(img => img.getAttribute('data-original') || img.src)
+    .filter(Boolean);
+
+  if (!images.length) return;
+
+  const newSlider = document.createElement("div");
+  newSlider.className = "simple-slider";
+
+  newSlider.innerHTML = \`
+    <div class="simple-slider-track">
+      \${images.map(url => \`
+        <div class="simple-slide">
+          <img src="\${url}">
+        </div>
+      \`).join("")}
+    </div>
+
+    <button class="simple-arrow left">‹</button>
+    <button class="simple-arrow right">›</button>
+  \`;
+
+  slider.replaceWith(newSlider);
+
+  const track = newSlider.querySelector(".simple-slider-track");
+
+  let current = 0;
+
+  function update() {
+    track.style.transform = \`translateX(-\${current * 100}%)\`;
+  }
+
+  newSlider.querySelector(".left").onclick = () => {
+    current = (current - 1 + images.length) % images.length;
+    update();
+  };
+
+  newSlider.querySelector(".right").onclick = () => {
+    current = (current + 1) % images.length;
+    update();
+  };
+});
+
 
 </script>
 `);
