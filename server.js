@@ -266,15 +266,18 @@ translated = translated.replace(/NOK 790 단축 및 NOK 1190 아버지/g, "짧�
 translated = translated.replace(/신뢰 Arcticugol/g, "TRUST Arcticugol");
 translated = translated.replace(/통합 연방 여행사 등록 RTO 017351의 등록 번호/g, "통합 연방 관광사업자 등록부 등록번호 RTO 017351");
 translated = translated.replace(/크리스마스 07-11/g, "7월 07-11일");
-translated = translated.replace(/120NOK 0/g, "1200 NOK");
+translated = translated.replace(/NOK 0/g, "0 NOK");
 translated = translated.replace(/SNGL에 대한 추가 지불/g, "싱글룸 추가 요금");
-translated = translated.replace(/d오픈 RIB 보트를 타고 출발/g, "개방형 RIB 보트를 타고");
+translated = translated.replace(/제공된 드라이슈트(슈트, 부츠, 벙어리장갑)를 입고 d/g, "제공된 드라이슈트(슈트, 부츠, 벙어리장갑)를 입고");
+translated = translated.replace(/오픈 RIB 보트를 타고 출발/g, "오픈 RIB 보트를 타고");
 translated = translated.replace(/, 다음 정류장:/g, "로 출발하며 다음 일정 진행:");
 translated = translated.replace(/주변에서 하이킹/g, "주변을 가이드와 함께 하이킹");
 translated = translated.replace(/오늘의 활동에서는 그룹은 만에서 카약을 타거나 가이드와 함께하는 것 중 하나를 선택할 수 있습니다./g, "오늘 액티비티는 베이에서 카약을 타거나 피라미덴");
 translated = translated.replace(/피라미덴 — 최종 결정은/g, "하는 것 중 하나를 선택하게 되며, 최종 결정은");
 translated = translated.replace(/4 레스토랑에서 아침 식사/g, "레스토랑에서 4회 아침 식사");
 translated = translated.replace(/4 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 4회 저녁 식사 세트");
+translated = translated.replace(/북극 모험 사냥/g, "북극 모험을 찾아서");
+translated = translated.replace(/북극 모험을 위한 사냥/g, "북극 모험을 찾아서");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
