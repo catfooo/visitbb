@@ -278,6 +278,9 @@ translated = translated.replace(/4 레스토랑에서 아침 식사/g, "레스�
 translated = translated.replace(/4 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 4회 저녁 식사 세트");
 translated = translated.replace(/북극 모험 사냥/g, "북극 모험을 찾아서");
 translated = translated.replace(/북극 모험을 위한 사냥/g, "북극 모험을 찾아서");
+translated = translated.replace(/SNGL 숙박에 대한 추가 지불/g, "싱글룸 숙박 추가 요금");
+translated = translated.replace(/옮기다:/g, "이동:");
+translated = translated.replace(/장비 및 장비:/g, "장비:");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
