@@ -119,7 +119,7 @@ $('#rec822566513 a[href="/barentsburgsightseeinghiking"]').attr(
   "/pyramidensightseeinghiking"
 );
 
-    const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
+    const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title, em").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
       // Skip elements that have no visible text
       return $(this).text().trim().length > 0;
     });
@@ -298,7 +298,7 @@ translated = translated.replace(/1 Pyramid 레스토랑에서 점심 식사/g, "
 translated = translated.replace(/황야 사파리/g, "야생 탐험 사파리");
 translated = translated.replace(/고래, 해마/g, "고래, 바다코끼리");
 translated = translated.replace(/모든 종류의 야생 동물을 사냥하고/g, "다양한 야생동물을 찾아 나서며");
-translated = translated.replace(/please wear trekking boots — sneakers are not suitable/g, "트레킹 부츠 착용 필수 — 운동화는 적합하지 않습니다");
+//translated = translated.replace(/please wear trekking boots — sneakers are not suitable/g, "트레킹 부츠 착용 필수 — 운동화는 적합하지 않습니다");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
