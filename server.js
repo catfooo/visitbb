@@ -291,6 +291,10 @@ translated = translated.replace(/광산 정착/g, "광산 마을");
 translated = translated.replace(/요청 시 이용 가능한 날짜/g, "예약 가능 날짜는 문의 바랍니다");
 translated = translated.replace(/롱이어비엔(롱이어비엔)/g, "롱이어비엔");
 translated = translated.replace(/1 바렌츠부르크 레스토랑에서 점심 식사/g, "바렌츠부르크 레스토랑에서 점심 식사 1회");
+translated = translated.replace(/노르덴스키올드 빙하와 스발바르 제도의 험준한 절벽의 숨막히는 전경을 감상할 수 있는 롱이어비엔에서 소련의 유령 도시인 피라미덴으로 항해해 보세요./g, "롱위에아르뷔엔에서 출발하여 소련 시대의 유령 도시 피라미덴으로 항해합니다. 노르덴셸드 빙하와 스발바르의 험준한 절벽이 선사하는 숨막히는 풍경을 감상해보세요.");
+translated = translated.replace(/숨겨진 보석/g, "숨겨진 명소");
+translated = translated.replace(/극지의 날/g, "백야");
+translated = translated.replace(/1 Pyramid 레스토랑에서 점심 식사/g, "피라미덴 레스토랑에서 1회 점심 식사");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
