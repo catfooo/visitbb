@@ -263,6 +263,8 @@ translated = translated.replace(/우리 설립의/g, "이곳의");
 translated = translated.replace(/얻으십시오. 무제한의 시간을/g, "얻으십시오. 무제한의 시간으로");
 translated = translated.replace(/바렌츠부르크(바렌츠부르크)/g, "바렌츠부르크");
 translated = translated.replace(/NOK 790 단축 및 NOK 1190 아버지/g, "짧은 체험 790 NOK & 긴 체험 1190 NOK");
+translated = translated.replace(/신뢰 Arcticugol/g, "TRUST Arcticugol");
+translated = translated.replace(/통합 연방 여행사 등록 RTO 017351의 등록 번호/g, "통합 연방 관광사업자 등록부 등록번호 RTO 017351");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
