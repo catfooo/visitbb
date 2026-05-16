@@ -287,6 +287,10 @@ translated = translated.replace(/북극 모험을 위한 사냥/g, "북극 모�
 translated = translated.replace(/SNGL 숙박에 대한 추가 지불/g, "싱글룸 숙박 추가 요금");
 translated = translated.replace(/옮기다:/g, "이동:");
 translated = translated.replace(/장비 및 장비:/g, "장비:");
+translated = translated.replace(/광산 정착/g, "광산 마을");
+translated = translated.replace(/요청 시 이용 가능한 날짜/g, "예약 가능 날짜는 문의 바랍니다");
+translated = translated.replace(/롱이어비엔(롱이어비엔)/g, "롱이어비엔");
+translated = translated.replace(/1 바렌츠부르크 레스토랑에서 점심 식사/g, "바렌츠부르크 레스토랑에서 점심 식사 1회");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
