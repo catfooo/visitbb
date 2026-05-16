@@ -429,9 +429,17 @@ document.addEventListener("click", function(e) {
 // slider replacement
 document.querySelectorAll('.t-slds').forEach((slider, index) => {
 
-  const images = [...slider.querySelectorAll('img')]
-    .map(img => img.getAttribute('data-original') || img.src)
-    .filter(Boolean);
+  const images = [
+
+    // normal img sliders
+    ...[...slider.querySelectorAll('img')]
+      .map(img => img.getAttribute('data-original') || img.src),
+  
+    // T670 background-image sliders
+    ...[...slider.querySelectorAll('.t-bgimg')]
+      .map(div => div.getAttribute('data-original'))
+  
+  ].filter(Boolean);
 
   if (!images.length) return;
 
