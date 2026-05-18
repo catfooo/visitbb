@@ -320,6 +320,14 @@ translated = translated.replace(/Hotel Pyramiden/g, "피라미덴 호텔");
 translated = translated.replace(/NT 피라미덴/g, "피라미덴 레스토랑");
 translated = translated.replace(/호언장담 피라미덴/g, "피라미덴 레스토랑");
 translated = translated.replace(/식당/g, "");
+translated = translated.replace(/Pyramiden Restaurant/g, "피라미덴 레스토랑");
+translated = translated.replace(/제공하고 싶습/g, "제공하려 합");
+translated = translated.replace(/The Bar of the Pyramiden Hotel은/g, "피라미덴 호텔의 바는");
+translated = translated.replace(/칠아웃 존이/g, "라운지(chillout zone)가");
+translated = translated.replace(/이 꼭 봐야 할 이유/g, "에 꼭 참여해야 할 이유");
+translated = translated.replace(/Pyramiden/g, "피라미덴");
+translated = translated.replace(/호텔에서 모든 수준과 관심 분야/g, "호텔에서 출발하는, 모든 수준과 관심 분야");
+translated = translated.replace(/, 물론 아름다운 산과 폭포/g, " 뿐만 아니라 아름다운 산과 폭포도 방문해 보세요.");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
