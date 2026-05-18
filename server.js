@@ -376,6 +376,21 @@ translated = translated.replace(/마을 외부에 있는/g, "마을 외부로 �
 translated = translated.replace(/자기 방어를 위해/g, "자기 방어 차원에서");
 translated = translated.replace(/프란츠 조셉 랜드는/g, "프란츠 조셉 랜드에는");
 translated = translated.replace(/을 공유하며/g, "이 공통으로 서식하고 있으며");
+translated = translated.replace(/장거리 여행이라면 롱이어비엔에서 휴식을 취한 뒤 다음날 황야로 떠나는 것이 좋다./g, "장거리 여행의 경우, 다음 날 야생 자연 지역으로 출발하기 전에 롱이어비엔에서 충분히 휴식을 취하는 것을 추천합니다.");
+translated = translated.replace(/더 많은 정보를 원하시면 방문해주세요/g, "더 많은 정보를 원하시면 다음 사이트를 참조하세요:");
+translated = translated.replace(/Russkiy Dom Guesthouse/g, "루스키 돔 게스트하우스");
+translated = translated.replace(/전송에는 약 소요됩니다. 15분/g, "이동 시간은 약 15분이며");
+translated = translated.replace(/돌아다니는 방법/g, "이동 및 교통 안내");
+//translated = translated.replace(/황야에 들어가는/g, "야생 자연으로 들어가는");
+translated = translated.replace(/어 황야에 들어가는 모든 사람이 적절한 안전 장비를 갖추고 있는지 확인합니다./g, "으며, 이는 야생 지역으로 들어가는 모든 사람이 적절한 안전 장비를 갖추도록 하기 위한 것입니다.");
+translated = translated.replace(/대략 있습니다. /g, "");
+translated = translated.replace(/총 40km의 도로/g, "대략 40km의 도로");
+translated = translated.replace(/북극의 황야로 들어가려면/g, "북극의 야생 지역으로 들어가려면");
+translated = translated.replace(/인정된 회사/g, "공인된 업체");
+translated = translated.replace(/알코올 한도는/g, "혈중알코올농도 허용 기준은");
+translated = translated.replace(/알코올 한도/g, "주류 제한");
+translated = translated.replace(/ATC 그루만트/g, "여행사 그루만트");
+translated = translated.replace(/술에 취하지 않은 고객은/g, "고객이 충분히 술이 깨지 않은 상태라고 판단될 경우");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
