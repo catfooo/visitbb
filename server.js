@@ -129,7 +129,7 @@ $('#rec822566513 a[href="/barentsburgsightseeinghiking"]').attr(
   "/pyramidensightseeinghiking"
 );
 
-    const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title, em, u").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
+    const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title, em, u").not(".t967__additional-langs, .t967__additional-langs *").not("#cardbtn1_797128826, #cardbtn1_797128826 *").filter(function () {
       // Skip elements that have no visible text
       return $(this).text().trim().length > 0;
     });
