@@ -129,7 +129,7 @@ $('#rec822566513 a[href="/barentsburgsightseeinghiking"]').attr(
   "/pyramidensightseeinghiking"
 );
 
-    const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title, em").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
+    const elements = $("p, h1, h2, h3, h4, h5, h6, a, button, span, li, div, strong, title, em, u").not(".t967__additional-langs, .t967__additional-langs *").filter(function () {
       // Skip elements that have no visible text
       return $(this).text().trim().length > 0;
     });
@@ -328,6 +328,14 @@ translated = translated.replace(/이 꼭 봐야 할 이유/g, "에 꼭 참여해
 translated = translated.replace(/Pyramiden/g, "피라미덴");
 translated = translated.replace(/호텔에서 모든 수준과 관심 분야/g, "호텔에서 출발하는, 모든 수준과 관심 분야");
 translated = translated.replace(/, 물론 아름다운 산과 폭포/g, " 뿐만 아니라 아름다운 산과 폭포도 방문해 보세요.");
+translated = translated.replace(/호텔 피라미덴/g, "피라미덴 호텔");
+translated = translated.replace(/스위트\/SNGL 숙박 시설/g, "스위트룸/싱글룸");
+translated = translated.replace(/DBL\/TWIN 표준/g, "더블/트윈 스탠다드룸");
+translated = translated.replace(/SNGL 표준/g, "싱글 스탠다드룸");
+translated = translated.replace(/우수한/g, "수페리어룸");
+translated = translated.replace(/SNGL 우수/g, "수페리어 싱글룸");
+translated = translated.replace(/계절에 따라 개장했/g, "시즌제로 운영되어 오고 있");
+translated = translated.replace(/소련/g, "구소련");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
