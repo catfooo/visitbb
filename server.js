@@ -346,6 +346,9 @@ translated = translated.replace(/거점이었던 집이/g, "거점이었던 집�
 translated = translated.replace(/차를 위한 정차가 계획된/g, "티타임을 위한");
 translated = translated.replace(/현장 점심/g, "도시락");
 translated = translated.replace(/조수 일정에 따라 경로의/g, "조수 일정에 따라 이동 경로의");
+translated = translated.replace(/광산 입구 투어 "갤러리"/g, '광산 입구 "갤러리(갱도)" 투어');
+translated = translated.replace(/산비탈에 있는 갤러리를 통해/g, "산비탈에 있는 갤러리(갱도)를 통해");
+translated = translated.replace(/호텔에는 모든 수준과 관심/g, "호텔에서 출발하는, 모든 수준과 관심 분야");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
