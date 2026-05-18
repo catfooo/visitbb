@@ -299,6 +299,14 @@ translated = translated.replace(/황야 사파리/g, "야생 탐험 사파리");
 translated = translated.replace(/고래, 해마/g, "고래, 바다코끼리");
 translated = translated.replace(/모든 종류의 야생 동물을 사냥하고/g, "다양한 야생동물을 찾아 나서며");
 //translated = translated.replace(/please wear trekking boots — sneakers are not suitable/g, "트레킹 부츠 착용 필수 — 운동화는 적합하지 않습니다");
+translated = translated.replace(/피라미덴 방문: 되살아난 소련 유령 도시/g, "되살아난 소련 유령 도시인 피라미덴을 방문해 보세요");
+translated = translated.replace(/문화 궁전/g, "문화의 전당");
+translated = translated.replace(/피라미덴는/g, "피라미덴은");
+translated = translated.replace(/스노모빌을 타고 숨막히는 북극 풍경을/g, "은 스노모빌을 타고 숨막히는 북극 풍경을");
+translated = translated.replace(/빠른 소개를 원하시거나/g, "를 선택하시거나 더 깊은 경험을 위해 ");
+translated = translated.replace(/더 깊은 경험을 위해 피라미덴에서 하룻밤을 묵으세요./g, "를 선택하여 피라미덴에서 하룻밤을 묵으세요.");
+translated = translated.replace(/Hotel Pyramiden/g, "피라미덴 호텔");
+translated = translated.replace(/NT 피라미덴/g, "피라미덴 레스토랑");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
