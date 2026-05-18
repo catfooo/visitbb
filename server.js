@@ -97,9 +97,7 @@ console.log("Final URL:", page.url());
     // bypass tilda word injection
     $("*").each(function () {
       const el = $(this);
-    
       const html = el.html();
-    
       // merge broken strong splits like RESTAU <strong>RA</strong> NT
       if (html && html.includes("</strong><strong")) {
         el.html(html.replace(/<\/strong>\s*<strong>/g, ""));
@@ -321,6 +319,7 @@ translated = translated.replace(/더 깊은 경험을 위해 피라미덴에서 
 translated = translated.replace(/Hotel Pyramiden/g, "피라미덴 호텔");
 translated = translated.replace(/NT 피라미덴/g, "피라미덴 레스토랑");
 translated = translated.replace(/호언장담 피라미덴/g, "피라미덴 레스토랑");
+translated = translated.replace(/식당/g, "");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
