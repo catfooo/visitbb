@@ -304,6 +304,7 @@ translated = translated.replace(/문화 궁전/g, "문화의 전당");
 translated = translated.replace(/피라미덴는/g, "피라미덴은");
 translated = translated.replace(/스노모빌을 타고 숨막히는 북극 풍경을/g, "은 스노모빌을 타고 숨막히는 북극 풍경을");
 translated = translated.replace(/빠른 소개를 원하시거나/g, "를 선택하시거나 더 깊은 경험을 위해 ");
+translated = translated.replace(/간단한 소개를 원하시거나/g, "를 선택하시거나 더 깊은 경험을 위해 ");
 translated = translated.replace(/더 깊은 경험을 위해 피라미덴에서 하룻밤을 묵으세요./g, "를 선택하여 피라미덴에서 하룻밤을 묵으세요.");
 translated = translated.replace(/Hotel Pyramiden/g, "피라미덴 호텔");
 translated = translated.replace(/NT 피라미덴/g, "피라미덴 레스토랑");
