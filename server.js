@@ -350,6 +350,7 @@ translated = translated.replace(/광산 입구 투어 "갤러리"/g, '광산 입
 translated = translated.replace(/산비탈에 있는 갤러리를 통해/g, "산비탈에 있는 갤러리(갱도)를 통해");
 translated = translated.replace(/호텔에는 모든 수준과 관심/g, "호텔에서 출발하는, 모든 수준과 관심 분야");
 translated = translated.replace(/장기 타운/g, "롱이어비엔");
+translated = translated.replace(/갖춘 넓은 조을/g, "갖춘 넓은 조식당을");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
