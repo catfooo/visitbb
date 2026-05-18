@@ -94,6 +94,18 @@ console.log("Final URL:", page.url());
 
     const $ = cheerio.load(html);
 
+    // bypass tilda word injection
+    $("*").each(function () {
+      const el = $(this);
+    
+      const html = el.html();
+    
+      // merge broken strong splits like RESTAU <strong>RA</strong> NT
+      if (html && html.includes("</strong><strong")) {
+        el.html(html.replace(/<\/strong>\s*<strong>/g, ""));
+      }
+    });
+
     // EN link to not be /
     $('.t967__additional-langs a').each(function () {
       if ($(this).text().trim() === "EN") {
@@ -308,6 +320,7 @@ translated = translated.replace(/간단한 소개를 원하시거나/g, "를 선
 translated = translated.replace(/더 깊은 경험을 위해 피라미덴에서 하룻밤을 묵으세요./g, "를 선택하여 피라미덴에서 하룻밤을 묵으세요.");
 translated = translated.replace(/Hotel Pyramiden/g, "피라미덴 호텔");
 translated = translated.replace(/NT 피라미덴/g, "피라미덴 레스토랑");
+translated = translated.replace(/호언장담 피라미덴/g, "피라미덴 레스토랑");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
