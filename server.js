@@ -391,6 +391,12 @@ translated = translated.replace(/알코올 한도는/g, "혈중알코올농도 �
 translated = translated.replace(/알코올 한도/g, "주류 제한");
 translated = translated.replace(/ATC 그루만트/g, "여행사 그루만트");
 translated = translated.replace(/술에 취하지 않은 고객은/g, "고객이 충분히 술이 깨지 않은 상태라고 판단될 경우");
+translated = translated.replace(/모자, 머리띠 및\/또는 모자/g, "모자, 헤드밴드 및/또는 캡 모자");
+translated = translated.replace(/니트 또는 양털 버프/g, "니트나 플리스 소재의 버프(넥워머)");
+translated = translated.replace(/색안경/g, "선글라스");
+translated = translated.replace(/수하물 운반용 건조 가방/g, "짐 운반용 방수 가방");
+translated = translated.replace(/카메라를 담는 건조 가방/g, "카메라를 담는 방수 가방");
+translated = translated.replace(/가방 운송은 개방형 보트에 의해 수행되므로 편안함을 위해 딱딱한 시체가 없는 방수 가방에 수하물을 포장하는 것이 좋습니다. 필요한 경우 수하물을 추가 보호 범위로 포장하므로 필수는 아니지만 추가 보호 계층이 유용할 것입니다./g, "편안한 여행을 위해 방수 기능이 있는 소프트백(딱딱한 프레임이 없는 가방)에 짐을 챙기는 것을 강력히 권장합니다. 짐 운반은 개방형 보트를 통해 이루어지기 때문입니다. 필수 사항은 아니며, 필요 시 추가 방수 커버로 짐을 보호해 드리지만, 추가적인 방수 보호가 있으면 더욱 유용합니다.");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
