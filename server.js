@@ -336,6 +336,16 @@ translated = translated.replace(/우수한/g, "수페리어룸");
 translated = translated.replace(/SNGL 우수/g, "수페리어 싱글룸");
 translated = translated.replace(/계절에 따라 개장했/g, "시즌제로 운영되어 오고 있");
 translated = translated.replace(/소련/g, "구소련");
+translated = translated.replace(/노란색/g, "황색");
+translated = translated.replace(/지속:/g, "소요 시간 및 거리:");
+translated = translated.replace(/페투로/g, "페투니아북타");
+translated = translated.replace(/깨짐/g, "");
+translated = translated.replace(/깃 달기/g, "");
+translated = translated.replace(/전환점/g, "반환점");
+translated = translated.replace(/거점이었던 집이/g, "거점이었던 집입니");
+translated = translated.replace(/차를 위한 정차가 계획된/g, "티타임을 위한");
+translated = translated.replace(/현장 점심/g, "도시락");
+translated = translated.replace(/조수 일정에 따라 경로의/g, "조수 일정에 따라 이동 경로의");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
