@@ -409,6 +409,7 @@ translated = translated.replace(/기타 알코올 음료는 오후 1시까지만
 translated = translated.replace(/무선 침묵 및 드론 금지 구역/g, "전파 사용 제한(radio silence) 및 드론 금지 구역");
 translated = translated.replace(/찍는 규칙을 숙지하십시오/g, "촬영할 때 적용되는 규정을 숙지해야 합니다");
 translated = translated.replace(/운송 및 운송/g, "이동 및 교통수단");
+translated = translated.replace(/LONGYEARBYEN/g, "롱이어비엔");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
