@@ -410,6 +410,27 @@ translated = translated.replace(/무선 침묵 및 드론 금지 구역/g, "전�
 translated = translated.replace(/찍는 규칙을 숙지하십시오/g, "촬영할 때 적용되는 규정을 숙지해야 합니다");
 translated = translated.replace(/운송 및 운송/g, "이동 및 교통수단");
 translated = translated.replace(/LONGYEARBYEN/g, "롱이어비엔");
+translated = translated.replace(/전조등/g, "헤드램프");
+translated = translated.replace(/열 팩/g, "발열팩");
+translated = translated.replace(/시체 가방/g, "소프트백(천 소재 가방)");
+translated = translated.replace(/스발바르 여행사에서 잘 알려진/g, "스발바르 기반의 여행사들에게 잘 알려진 제품인,");
+// i see sarcasm here xD
+translated = translated.replace(/국경군의 북극 분포/g, "국경군의 북극 주둔");
+translated = translated.replace(/이와 유사한/g, "이에 준하는");
+translated = translated.replace(/스노모빌 스위트/g, "스노모빌 슈트");
+translated = translated.replace(/이 스위트룸은 -5도/g, "이 슈트는 -5도");
+translated = translated.replace(/합성 발라클라바/g, "합성 소재 발라클라바");
+translated = translated.replace(/47까지의 크기;/g, "47까지의 사이즈가 준비되어 있습니다.");
+translated = translated.replace(/장갑(클림, 스콧)/g, "벙어리장갑(Klim, Scott)");
+translated = translated.replace(/생태학/g, "환경 보호 관련 기준");
+translated = translated.replace(/미적 요구 사항/g, "디자인적 기준");
+translated = translated.replace(/음주나 음주가 적발될/g, "음주 상태 또는 음주 행위가 확인될");
+translated = translated.replace(/투숙객은/g, "참가자는");
+translated = translated.replace(/다음과 같은 목적으로/g, "다음과 같은 경우");
+translated = translated.replace(/호스팅 회사/g, "숙박 운영사");
+translated = translated.replace(/들판에서 먹는 도시락/g, "이동 도중에 제공되는 도시락");
+translated = translated.replace(/고기 육수/g, "고기 국물");
+translated = translated.replace(/술을 마시지 않은/g, "술이 깨지 않은");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
