@@ -432,6 +432,12 @@ translated = translated.replace(/호스팅 회사/g, "숙박 운영사");
 translated = translated.replace(/들판에서 먹는 도시락/g, "이동 도중에 제공되는 도시락");
 translated = translated.replace(/고기 육수/g, "고기 국물");
 translated = translated.replace(/술을 마시지 않은/g, "음주 상태인");
+translated = translated.replace(/고북부에 위치해 있음에도/g, "북극 고위도 지역에 위치해 있음에도");
+translated = translated.replace(/가지고 있다는 점이다./g, "가지고 있다는 점입니다.");
+translated = translated.replace(/물론 다른 북극 지역에 비해/g, "물론 다른 북극 지역과 비교했을 때 그렇습니다");
+translated = translated.replace(/기간이 있긴 하지만/g, "그러나");
+translated = translated.replace(/겨울철/g, "겨울 시즌");
+translated = translated.replace(/평균 기온은 -15°C, -20°C입니다/g, "으로 분류되는, 평균 기온이 -15°C, -20°C인 기간이 있기는 합니다");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
