@@ -431,7 +431,7 @@ translated = translated.replace(/다음과 같은 목적으로/g, "다음과 같
 translated = translated.replace(/호스팅 회사/g, "숙박 운영사");
 translated = translated.replace(/들판에서 먹는 도시락/g, "이동 도중에 제공되는 도시락");
 translated = translated.replace(/고기 육수/g, "고기 국물");
-translated = translated.replace(/술을 마시지 않은/g, "술이 깨지 않은");
+translated = translated.replace(/술을 마시지 않은/g, "음주 상태인");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
