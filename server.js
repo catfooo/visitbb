@@ -435,9 +435,12 @@ translated = translated.replace(/술을 마시지 않은/g, "음주 상태인");
 translated = translated.replace(/고북부에 위치해 있음에도/g, "북극 고위도 지역에 위치해 있음에도");
 translated = translated.replace(/가지고 있다는 점이다./g, "가지고 있다는 점입니다.");
 translated = translated.replace(/물론 다른 북극 지역에 비해/g, "물론 다른 북극 지역과 비교했을 때 그렇습니다");
-translated = translated.replace(/기간이 있긴 하지만/g, "그러나");
+translated = translated.replace(/기간이 있긴 하지만/g, "그러나 ");
 translated = translated.replace(/겨울철/g, "겨울 시즌");
 translated = translated.replace(/평균 기온은 -15°C, -20°C입니다/g, "으로 분류되는, 평균 기온이 -15°C, -20°C인 기간이 있기는 합니다");
+translated = translated.replace(/에 관해서는/g, "이제 ");
+translated = translated.replace(/, 7월 평균 기온은/g, "에 대해 알아봅시다. 7월 평균 기온은");
+translated = translated.replace(/강수량이 가능하며/g, "비가 내릴 가능성이 있으며");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
