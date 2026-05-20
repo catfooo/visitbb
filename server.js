@@ -414,6 +414,7 @@ translated = translated.replace(/전조등/g, "헤드램프");
 translated = translated.replace(/열 팩/g, "발열팩");
 translated = translated.replace(/시체 가방/g, "소프트백(천 소재 가방)");
 translated = translated.replace(/스발바르 여행사에서 잘 알려진/g, "스발바르 기반의 여행사들에게 잘 알려진 제품인,");
+translated = translated.replace(/스발바르의 여행사에서 잘 알려진/g, "스발바르 기반의 여행사들에게 잘 알려진 제품인,");
 // i see sarcasm here xD
 translated = translated.replace(/국경군의 북극 분포/g, "국경군의 북극 주둔");
 translated = translated.replace(/이와 유사한/g, "이에 준하는");
