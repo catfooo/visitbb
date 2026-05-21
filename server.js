@@ -441,6 +441,7 @@ translated = translated.replace(/평균 기온은 -15°C, -20°C입니다/g, "�
 translated = translated.replace(/에 관해서는/g, "이제 ");
 translated = translated.replace(/, 7월 평균 기온은/g, "에 대해 알아봅시다. 7월 평균 기온은");
 translated = translated.replace(/강수량이 가능하며/g, "비가 내릴 가능성이 있으며");
+translated = translated.replace(/남지 않는 5월에 끝납니다./g, "남지 않는 5월에 끝납니다. 다음을 참조해 보세요: ");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
