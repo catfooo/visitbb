@@ -450,6 +450,8 @@ translated = translated.replace(/여름 투어:/g, "여름 투어를 위한 의�
 translated = translated.replace(/중간 활동을 위한/g, "중간 정도 활동에 적합한");
 translated = translated.replace(/보온 양말\(2켤레\)/g, "기능성 보온 양말(2켤레)");
 translated = translated.replace(/항상 만나뵙게 되어 기쁘게/g, "만나뵙게 되어 항상 기쁘게");
+translated = translated.replace(/활동량이 적은/g, "활동량이 적은 환경(사냥, 낚시 등)에 적합한");
+translated = translated.replace(/모직 보온 속옷\(사냥, 낚시\)/g, "울 소재 기능성 내의");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
