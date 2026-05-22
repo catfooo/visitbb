@@ -471,6 +471,13 @@ translated = translated.replace(/실제로 1931년으로/g, "실제로 그 역�
 translated = translated.replace(/Trust Arcticugol은 3개 마을/g, "Trust Arcticugol은 바렌츠부르크, 피라미덴 그리고 그루만트 이 3개 마을");
 //x
 translated = translated.replace(/인프라 소유자였습니다.바렌츠부르크,피라미덴그리고그루만트./g, "인프라 소유자였습니다.");
+translated = translated.replace(/얼음 수염 탐험가/g, "수염에 얼음이 맺힐 정도의 탐험가");
+translated = translated.replace(/처리하겠습니다/g, "책임지겠습니다");
+translated = translated.replace(/게스트하우스\)을 소유하고 있습니다./g, "롱이어비엔에 있는 ");
+translated = translated.replace(/롱이어비엔에서; 에이/g, ", 바렌츠부르크에 있는 ");
+translated = translated.replace(/숙박소/g, "호스텔");
+translated = translated.replace(/바렌츠부르크에서; 에이/g, ", 피라미덴에 있는 ");
+translated = translated.replace(/피라미덴\)/g, "을 소유하고 있습니다. ");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
