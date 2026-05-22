@@ -1,4 +1,4 @@
 https://barentsburg.onrender.com  
 https://github.com/catfooo/warmbb  
-visitbb.up.railway.app  
-warmbb.up.railway.app
+https://visitbb.up.railway.app  
+https://warmbb.up.railway.app
