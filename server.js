@@ -463,6 +463,8 @@ translated = translated.replace(/용량/g, "수용 인원");
 translated = translated.replace(/m\/s Princess Lea/g, "모터선 Princess Lea");
 translated = translated.replace(/전세를 이용할/g, "임대로 이용할");
 translated = translated.replace(/설상차/g, "스노모빌");
+translated = translated.replace(/불꽃 장비/g, "화약류 장비");
+translated = translated.replace(/입력 오류/g, "타이핑 오류");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
