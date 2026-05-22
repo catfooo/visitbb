@@ -465,6 +465,11 @@ translated = translated.replace(/전세를 이용할/g, "임대로 이용할");
 translated = translated.replace(/설상차/g, "스노모빌");
 translated = translated.replace(/불꽃 장비/g, "화약류 장비");
 translated = translated.replace(/입력 오류/g, "타이핑 오류");
+translated = translated.replace(/ARCT입장료UGOL/g, "ARCTICUGOL");
+translated = translated.replace(/회사의 지점으로/g, "회사의 지사로");
+translated = translated.replace(/실제로 1931년으로/g, "실제로 그 역사는 1931년으로");
+translated = translated.replace(/Trust Arcticugol은 3개 마을/g, "Trust Arcticugol은 바렌츠부르크, 피라미덴 그리고 그루만트 이 3개 마을");
+translated = translated.replace(/인프라 소유자였습니다.바렌츠부르크,피라미덴그리고그루만트./g, "인프라 소유자였습니다.");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
