@@ -727,7 +727,7 @@ app.listen(PORT, () => {
 if (process.env.NODE_ENV === "production") {
   setInterval(() => {
     // fetch("https://barentsburg.onrender.com")
-    fetch("visitbb.up.railway.app")
+    fetch("https://visitbb.up.railway.app")
       .then(() => console.log("keep-alive ping"))
       .catch(err => console.log("ping error:", err.message));
   }, 5 * 60 * 1000);
