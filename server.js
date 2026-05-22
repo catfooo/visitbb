@@ -469,6 +469,7 @@ translated = translated.replace(/ARCT입장료UGOL/g, "ARCTICUGOL");
 translated = translated.replace(/회사의 지점으로/g, "회사의 지사로");
 translated = translated.replace(/실제로 1931년으로/g, "실제로 그 역사는 1931년으로");
 translated = translated.replace(/Trust Arcticugol은 3개 마을/g, "Trust Arcticugol은 바렌츠부르크, 피라미덴 그리고 그루만트 이 3개 마을");
+//x
 translated = translated.replace(/인프라 소유자였습니다.바렌츠부르크,피라미덴그리고그루만트./g, "인프라 소유자였습니다.");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
