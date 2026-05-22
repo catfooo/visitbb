@@ -415,7 +415,6 @@ translated = translated.replace(/열 팩/g, "발열팩");
 translated = translated.replace(/시체 가방/g, "소프트백(천 소재 가방)");
 translated = translated.replace(/스발바르 여행사에서 잘 알려진/g, "스발바르 기반의 여행사들에게 잘 알려진 제품인,");
 translated = translated.replace(/스발바르의 여행사에서 잘 알려진/g, "스발바르 기반의 여행사들에게 잘 알려진 제품인,");
-// i see sarcasm here xD
 translated = translated.replace(/국경군의 북극 분포/g, "국경군의 북극 주둔");
 translated = translated.replace(/이와 유사한/g, "이에 준하는");
 translated = translated.replace(/스노모빌 스위트/g, "스노모빌 슈트");
@@ -452,6 +451,15 @@ translated = translated.replace(/보온 양말\(2켤레\)/g, "기능성 보온 �
 translated = translated.replace(/항상 만나뵙게 되어 기쁘게/g, "만나뵙게 되어 항상 기쁘게");
 translated = translated.replace(/활동량이 적은/g, "활동량이 적은 환경(사냥, 낚시 등)에 적합한");
 translated = translated.replace(/모직 보온 속옷\(사냥, 낚시\)/g, "울 소재 기능성 내의");
+translated = translated.replace(/우리 마을로 가는 방법/g, "우리의 마을로 오시는 길");
+translated = translated.replace(/북극의 황야로/g, "북극의 야생 지역으로");
+translated = translated.replace(/북극권\(RIB\)/g, "Polarcirkel(RIB보트)");
+translated = translated.replace(/전세로 이용/g, "대여해서 이용도");
+translated = translated.replace(/당사에 문의하세요/g, "문의해 주세요");
+translated = translated.replace(/용량-/g, "수용 인원-");
+translated = translated.replace(/m\/s Princess Lea/g, "모터선 Princess Lea");
+translated = translated.replace(/전세를 이용할/g, "임대로 이용할");
+translated = translated.replace(/설상차/g, "스노모빌");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
