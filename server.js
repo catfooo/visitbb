@@ -455,10 +455,11 @@ translated = translated.replace(/우리 마을로 가는 방법/g, "우리의 �
 translated = translated.replace(/북극의 황야로/g, "북극의 야생 지역으로");
 //translated = translated.replace(/북극권\(RIB\)/g, "Polarcirkel(RIB보트)");
 translated = translated.replace(/북극권/g, "Polarcirkel");
+// not working
 translated = translated.replace(/\(RIB\)/g, "(RIB보트)");
 translated = translated.replace(/전세로 이용/g, "대여해서 이용도");
 translated = translated.replace(/당사에 문의하세요/g, "문의해 주세요");
-translated = translated.replace(/용량-/g, "수용 인원-");
+translated = translated.replace(/용량/g, "수용 인원");
 translated = translated.replace(/m\/s Princess Lea/g, "모터선 Princess Lea");
 translated = translated.replace(/전세를 이용할/g, "임대로 이용할");
 translated = translated.replace(/설상차/g, "스노모빌");
