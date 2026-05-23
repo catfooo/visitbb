@@ -478,6 +478,9 @@ translated = translated.replace(/롱이어비엔에서; 에이/g, ", 바렌츠�
 translated = translated.replace(/숙박소/g, "호스텔");
 translated = translated.replace(/바렌츠부르크에서; 에이/g, ", 피라미덴의 ");
 translated = translated.replace(/피라미덴\)/g, "을 소유하고 있습니다. ");
+translated = translated.replace(/에게/g, "으로부터");
+translated = translated.replace(/사파리, 관광 등\)/g, "사파리, 관광 등\) 스발바르에서 다양한 모험과 자연 체험을 제공합니다");
+translated = translated.replace(/스발바르에서 다양한 모험과 자연 체험을 제공합니다./g, "");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
