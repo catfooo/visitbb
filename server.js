@@ -493,8 +493,17 @@ translated = translated.replace(/재정적 측면에서 볼 때/g, "가격대 �
 translated = translated.replace(/우리의 제안은/g, "우리의 선택지는");
 translated = translated.replace(/인기 있는 예산 여행/g, "대중적인 저가 투어");
 translated = translated.replace(/고급형 독점 탐험/g, "고급 익스클루시브 탐험");
-// bcs of previous change
+// bcs of previous change //x
 translated = translated.replace(/가족으로부터 적합/g, "가족을 위해 적합");
+translated = translated.replace(/고품질의 경험과/g, "양질의 체험을 제공하고");
+translated = translated.replace(/긴밀한 만남/g, "가까운 만남");
+translated = translated.replace(/같은 생각을 가진 사람들/g, "뜻이 맞는 사람들");
+translated = translated.replace(/관찰을 제공합니다/g, "관찰의 기회를 제공합니다");
+translated = translated.replace(/모험 여행/g, "어드벤쳐 여행");
+translated = translated.replace(/우리는 영어 가이드 조인 투어와 국제 여행사를 위한 맞춤형 여행을 준비합니다/g, "우리는 영어 가이드가 동행하는 조인 투어뿐만 아니라, 해외 여행사를 위한 맞춤형 여행도 운영하고 있습니다");
+translated = translated.replace(/환경 보호 관련 기준적으로 민감한/g, "생태적으로 취약한");
+translated = translated.replace(/숨막히는 풍경/g, "아름다운 자연 경관");
+translated = translated.replace(/우리가 집이라고 부르는/g, "우리 삶의 터전의");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
