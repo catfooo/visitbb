@@ -481,8 +481,9 @@ translated = translated.replace(/피라미덴\)/g, "을 소유하고 있습니�
 translated = translated.replace(/에게/g, "으로부터 ");
 //x
 //translated = translated.replace(/사파리, 관광 등\)/g, "사파리, 관광 등) 스발바르에서 다양한 모험과 자연 체험을 제공합니다");
-translated = translated.replace(/사파리,\s*관광\s*등\s*\)?/g,
-"사파리, 관광 등) 스발바르에서 다양한 모험과 자연 체험을 제공합니다");
+//translated = translated.replace(/사파리,\s*관광\s*등\s*\)?/g,
+//"사파리, 관광 등) 스발바르에서 다양한 모험과 자연 체험을 제공합니다");
+translated = translated.replace(/사파리, 관광 등/g, "사파리, 관광 등) 스발바르에서 다양한 모험과 자연 체험을 제공합니다");
 translated = translated.replace(/스발바르에서 다양한 모험과 자연 체험을 제공합니다./g, "");
 translated = translated.replace(/보트, 하이킹, 카약, 겨울 및/g, ", 보트, 하이킹, 카약, 겨울 및 ");
 translated = translated.replace(/그리고 야생 탐험/g, " 그리고 야생 탐험");
