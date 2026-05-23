@@ -509,6 +509,8 @@ translated = translated.replace(/숨막히는 풍경/g, "아름다운 자연 경
 translated = translated.replace(/우리가 집이라고 부르는/g, "우리 삶의 터전의");
 translated = translated.replace(/바렌츠부르크\)/g, " ");
 translated = translated.replace(/GOARCT입장료A/g, "GOARCTICA");
+translated = translated.replace(/롱이어비엔\)/g, " ");
+translated = translated.replace(/스발바르의 겨울\(Winter on 스발바르\)은/g, "스발바르의 겨울은");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
