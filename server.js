@@ -477,7 +477,8 @@ translated = translated.replace(/게스트하우스\)을 소유하고 있습니�
 translated = translated.replace(/롱이어비엔에서; 에이/g, ", 바렌츠부르크의 ");
 translated = translated.replace(/숙박소/g, "호스텔");
 translated = translated.replace(/바렌츠부르크에서; 에이/g, ", 피라미덴의 ");
-translated = translated.replace(/피라미덴\)/g, "을 소유하고 있습니다. ");
+//translated = translated.replace(/피라미덴\)/g, "을 소유하고 있습니다. ");
+translated = translated.replace(/피라미덴\)/g, " ");
 //translated = translated.replace(/피라미덴\). 뿐만 아니라/g, "을 소유하고 있습니다. 뿐만 아니라");
 // more - than +
 //translated = translated.replace(/에게/g, "으로부터 ");
