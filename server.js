@@ -493,6 +493,7 @@ translated = translated.replace(/재정적 측면에서 볼 때/g, "가격대 �
 translated = translated.replace(/우리의 제안은/g, "우리의 선택지는");
 translated = translated.replace(/인기 있는 예산 여행/g, "대중적인 저가 투어");
 translated = translated.replace(/고급형 독점 탐험/g, "고급 익스클루시브 탐험");
+translated = translated.replace(/가족으로부터 적합/g, "가족에게 적합");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
