@@ -487,6 +487,8 @@ translated = translated.replace(/사파리, 관광 등/g, "사파리, 관광 등
 translated = translated.replace(/스발바르에서 다양한 모험과 자연 체험을 제공합니다./g, "");
 translated = translated.replace(/보트, 하이킹, 카약, 겨울 및/g, ", 보트, 하이킹, 카약, 겨울 및 ");
 translated = translated.replace(/그리고 야생 탐험/g, " 그리고 야생 탐험");
+translated = translated.replace(/도시 문화 투어에/g, "기본적으로 도시 문화 투어에");
+translated = translated.replace(/자연 및 활동 추가 항목으로 간주될 수 있습니다/g, "추가 항목으로 자연 및 액티비티를 즐길 수 있습니다");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
