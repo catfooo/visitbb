@@ -507,6 +507,7 @@ translated = translated.replace(/우리는 영어 가이드 조인 투어와 국
 translated = translated.replace(/환경 보호 관련 기준적으로 민감한/g, "생태적으로 취약한");
 translated = translated.replace(/숨막히는 풍경/g, "아름다운 자연 경관");
 translated = translated.replace(/우리가 집이라고 부르는/g, "우리 삶의 터전의");
+translated = translated.replace(/바렌츠부르크\)/g, " ");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
