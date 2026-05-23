@@ -511,6 +511,11 @@ translated = translated.replace(/바렌츠부르크\)/g, " ");
 translated = translated.replace(/GOARCT입장료A/g, "GOARCTICA");
 translated = translated.replace(/롱이어비엔\)/g, " ");
 translated = translated.replace(/스발바르의 겨울\(Winter on 스발바르\)은/g, "스발바르의 겨울은");
+translated = translated.replace(/북극 옆/g, "북극점 바로 옆까지");
+translated = translated.replace(/을 통한 7일간의 탐험/g, "를 통한 7일간의 탐험");
+translated = translated.replace(/발표될/g, "");
+translated = translated.replace(/날짜는 아직입니다/g, "날짜는 아직 발표되지 않았습니다");
+translated = translated.replace(/투어시 이메일을 보내주세요@goarctica.com\/guide@goarctica.com 날짜에 대해 문의합니다/g, "여행 가능 날짜에 대한 문의는 tour@goarctica.com과 guide@goarctica.com으로 부탁드립니다");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
