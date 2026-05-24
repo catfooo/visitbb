@@ -569,6 +569,9 @@ translated = translated.replace(/에서 2박/g, "2박 동안의 ");
 translated = translated.replace(/7 점심 정식/g, "점심 정식 7회");
 translated = translated.replace(/7 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 저녁 식사 정식 7회");
 translated = translated.replace(/1 맥주 시음/g, "맥주 시음 1회");
+translated = translated.replace(/장비 장착 및 포장/g, "장비 장착 및 짐 꾸리기");
+translated = translated.replace(/스노모빌로 출발/g, "스노모빌로 ");
+translated = translated.replace(/경로: 롱이어비엔 - Adventdalen -/g, "으로 출발하기\n 경로: 롱이어비엔 - Adventdalen -");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
