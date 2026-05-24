@@ -564,7 +564,7 @@ translated = translated.replace(/귀국 준비를 합니다./g, "");
 translated = translated.replace(/. 이 경로는 Sassendalen과 Adventdalen의/g, "으로 돌아갈 준비를 합니다. 이 경로는 Sassendalen과 Adventdalen의")
 translated = translated.replace(/엽서를 보낼 수 있는 완벽한 기회입니다/g, "엽서를 보낼 수 있는 좋은 기회입니다");
 translated = translated.replace(/에서 4박/g, "");
-translated = translated.replace(/트윈룸\/더블룸/g, "트윈룸/더블룸 에서 4박");
+translated = translated.replace(/트윈\/DBL 숙소/g, "트윈룸/더블룸 에서 4박");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
