@@ -524,6 +524,8 @@ translated = translated.replace(/어린이 이용 가능/g, "14세 이상의 어
 translated = translated.replace(/14세부터/g, "참여 가능");
 //translated = translated.replace(/\n가는 길/g, "여행을 시작하여");
 translated = translated.replace(/거리는 약 75km이며/g, "까지의 거리는 약 75km이며");
+translated = translated.replace(/하루는 저녁 식사로 마무리됩니다./g, "하루는 ");
+translated = translated.replace(/다음 모험을 시작하기 전에/g, "의 저녁 식사로 마무리됩니다.");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
