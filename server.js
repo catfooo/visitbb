@@ -571,7 +571,10 @@ translated = translated.replace(/7 레스토랑에서 저녁 식사 세트/g, "�
 translated = translated.replace(/1 맥주 시음/g, "맥주 시음 1회");
 translated = translated.replace(/장비 장착 및 포장/g, "장비 장착 및 짐 꾸리기");
 translated = translated.replace(/스노모빌로 출발/g, "스노모빌로 ");
+// line break x
 translated = translated.replace(/경로: 롱이어비엔 - Adventdalen -/g, "으로 출발하기\n 경로: 롱이어비엔 - Adventdalen -");
+translated = translated.replace(/하룻밤 동안/g, "숙박: ");
+translated = translated.replace(/사회주의 모범도시로 번성했다/g, "사회주의 모범도시로 번성했습니다");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
