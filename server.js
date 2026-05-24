@@ -539,6 +539,7 @@ translated = translated.replace(/, 마을을 탐험하거나 하루의 모험을
 translated = translated.replace(/또 다른 밤은 호텔에서/g, "두 번째 날의 밤은 호텔에서 보내게 됩니다: ");
 translated = translated.replace(/스노모빌 여행을 떠납니다./g, "");
 translated = translated.replace(/— 스발바르 제도의 이 지역에서/g, "로 스노모빌 여행을 떠납니다. 이곳은 스발바르 제도에서");
+translated = translated.replace(/약 95~110km이며 트레일에서/g, "약 95~110km이며 이 경로는");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
