@@ -552,12 +552,14 @@ translated = translated.replace(/저녁이 되자 우리는/g, "저녁이 되면
 translated = translated.replace(/NOK 저녁 식사/g, "잘 준비된 저녁 식사");
 translated = translated.replace(/6일차 - 피라미덴 발견/g, "6일차 - 피라미덴 탐험");
 translated = translated.replace(/장기 여행을 떠납니다./g, "우리는 당신을 연장된 투어인 ");
-translated = translated.replace(/— 시간이 멈춰버린 전설적인 구소련의 유령 도시/g, "으로 데려가겠습니다. 시간이 멈춰버린 전설적인 구소련의 유령 도시를 탐험해 보세요.");
+translated = translated.replace(/— 시간이 멈춰버린 전설적인 구소련의 유령 도시/g, "으로 데려가겠습니다. 시간이 멈춰버린 전설적인 구소련의 유령 도시를 탐험해 보세요");
 translated = translated.replace(/근처에 있는 피라미덴 모양/g, "근처에 있는 피라미드 모양");
 translated = translated.replace(/점심은 호텔로 돌아와서 오후에 출발합니다./g, "점심은 호텔로 돌아와서 제공될 것이며 오후에 우리는 ");
 translated = translated.replace(/, 마을을 둘러싼 극적인 풍경을/g, "을 시작하여 마을을 둘러싼 극적인 풍경을");
 translated = translated.replace(/60km의 거리를 3시간 정도/g, "60km의 거리이고 3시간 정도");
 translated = translated.replace(/그날의 인상이 공통으로 서식하고 있으며/g, "그날에 받은 인상을 서로 공유하면서");
+translated = translated.replace(/곳에서 가이드와 함께 저녁 식사를 하게 됩니다./g, "");
+translated = translated.replace(/, 북극에서 잊을 수 없는 한 주 동안의/g, "에서 가이드와 함께 저녁 식사를 하며, 북극에서 잊을 수 없는 한 주 동안의");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
