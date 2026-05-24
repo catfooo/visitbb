@@ -526,7 +526,7 @@ translated = translated.replace(/14세부터/g, "참여 가능");
 translated = translated.replace(/거리는 약 75km이며/g, "까지의 거리는 약 75km이며");
 translated = translated.replace(/하루는 저녁 식사로 마무리됩니다./g, "하루는 ");
 translated = translated.replace(/다음 모험을 시작하기 전에/g, "의 저녁 식사로 마무리됩니다. 다음 모험을 시작하기 전에");
-translated = translated.replace(/밤새:/g, "숙박:");
+translated = translated.replace(/밤새:/g, "숙박: ");
 translated = translated.replace(/호텔 조식 후 스노모빌 여행을 떠났습니다./g, "호텔 조식 후 ");
 translated = translated.replace(/, 넓은 바다를 향해 나아가다/g, "으로 스노모빌 여행을 떠나 ");
 translated = translated.replace(/. 우리의 경로는 얼어붙은 피요르드와/g, "의 넓은 바다를 향해 나아갑니다. 우리의 경로는 얼어붙은 피요르드와 ");
@@ -540,6 +540,9 @@ translated = translated.replace(/또 다른 밤은 호텔에서/g, "두 번째 �
 translated = translated.replace(/스노모빌 여행을 떠납니다./g, "");
 translated = translated.replace(/— 스발바르 제도의 이 지역에서/g, "로 스노모빌 여행을 떠납니다. 이곳은 스발바르 제도에서");
 translated = translated.replace(/약 95~110km이며 트레일에서/g, "약 95~110km이며 이 경로는");
+translated = translated.replace(/현재는 스노모빌이 없기 때문에 여유롭게 여유롭게/g, "오늘은 스노모빌 여행을 하지 않기 때문에");
+translated = translated.replace(/투어에 참여할 수 있습니다./g, "투어에 참여할 수 있습니다: ");
+translated = translated.replace(/기회를 갖게 될 것입니다./g, "기회를 갖게 될 것입니다: ");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
