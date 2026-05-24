@@ -575,6 +575,7 @@ translated = translated.replace(/스노모빌로 출발/g, "스노모빌로 ");
 translated = translated.replace(/경로: 롱이어비엔 - Adventdalen -/g, "으로 출발하기\n 경로: 롱이어비엔 - Adventdalen -");
 translated = translated.replace(/하룻밤 동안/g, "숙박: ");
 translated = translated.replace(/사회주의 모범도시로 번성했다/g, "사회주의 모범도시로 번성했습니다");
+translated = translated.replace(/바이킹의 길/g, "바이킹의 여정");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
