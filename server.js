@@ -585,9 +585,9 @@ translated = translated.replace(/무한한 북극/g, "끝없는 북극");
 translated = translated.replace(/서해안/g, "서부 해안");
 translated = translated.replace(/3일 스노모빌 투어/g, "3일간의 스노모빌 투어");
 translated = translated.replace(/외딴 전초기지인/g, "외딴 기지인");
-translated = translated.replace(/12세부터/g, "12세부터 참여 가능");
+translated = translated.replace(/12세부터/g, "참여 가능");
 if ($(el).attr("field") === "tn_text_1725980846159") {
-  translated = translated.replace(/14세 이상의 어린이/g, "");
+  translated = translated.replace(/14세 이상의 어린이/g, "12세 이상의 어린이");
 }
 // translated = translated.replace(/Grumant/g, "그루만트");
 
