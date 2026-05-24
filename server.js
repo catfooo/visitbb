@@ -560,6 +560,8 @@ translated = translated.replace(/60km의 거리를 3시간 정도/g, "60km의 �
 translated = translated.replace(/그날의 인상이 공통으로 서식하고 있으며/g, "그날에 받은 인상을 서로 공유하면서");
 translated = translated.replace(/곳에서 가이드와 함께 저녁 식사를 하게 됩니다./g, "");
 translated = translated.replace(/, 북극에서 잊을 수 없는 한 주 동안의/g, "에서 가이드와 함께 저녁 식사를 하며, 북극에서 잊을 수 없는 한 주 동안의");
+translated = translated.replace(/귀국 준비를 합니다./g, "");
+translated = translated.replace(/. 이 경로는 Sassendalen과 Adventdalen의/g, "으로 돌아갈 준비를 합니다. 이 경로는 Sassendalen과 Adventdalen의")
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
