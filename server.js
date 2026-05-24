@@ -530,6 +530,9 @@ translated = translated.replace(/밤새:/g, "숙박:");
 translated = translated.replace(/호텔 조식 후 스노모빌 여행을 떠났습니다./g, "호텔 조식 후 ");
 translated = translated.replace(/, 넓은 바다를 향해 나아가다/g, "으로 스노모빌 여행을 떠나 ");
 translated = translated.replace(/. 우리의 경로는 얼어붙은 피요르드와/g, "의 넓은 바다를 향해 나아갑니다. 우리의 경로는 얼어붙은 피요르드와 ");
+translated = translated.replace(/우리의 방문입니다./g, "");
+translated = translated.replace(/는 한때 스발바르 제도와/g, "로의 방문입니다. 이곳은 한때 스발바르 제도와");
+translated = translated.replace(/역사적인 이전 라디오/g, "역사적인 라디오");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
