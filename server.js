@@ -533,6 +533,8 @@ translated = translated.replace(/. 우리의 경로는 얼어붙은 피요르드
 translated = translated.replace(/우리의 방문입니다./g, "");
 translated = translated.replace(/는 한때 스발바르 제도와/g, "로의 방문입니다. 이곳은 한때 스발바르 제도와");
 translated = translated.replace(/역사적인 이전 라디오/g, "역사적인 라디오");
+translated = translated.replace(/에서 점심을 즐길 것이다/g, "");
+translated = translated.replace(/, 북극의 매력을 지닌 아늑하고/g, "에서 점심을 즐기고, 북극의 매력을 지닌 아늑하고");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
