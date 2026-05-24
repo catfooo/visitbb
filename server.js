@@ -580,6 +580,7 @@ translated = translated.replace(/2 레스토랑에서 아침 식사/g, "레스�
 translated = translated.replace(/3회 점심 세트/g, "점심 정식 3회");
 translated = translated.replace(/2세트 저녁 식사/g, "저녁식사 정식 2회");
 translated = translated.replace(/북극 옆/g, "북극점 바로 옆까지");
+translated = translated.replace(/을 통과하는 7일간의 탐험/g, "를 통과하는 7일간의 탐험");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
