@@ -576,6 +576,9 @@ translated = translated.replace(/경로: 롱이어비엔 - Adventdalen -/g, "으
 translated = translated.replace(/하룻밤 동안/g, "숙박: ");
 translated = translated.replace(/사회주의 모범도시로 번성했다/g, "사회주의 모범도시로 번성했습니다");
 translated = translated.replace(/바이킹의 길/g, "바이킹의 여정");
+translated = translated.replace(/2 레스토랑에서 아침 식사/g, "레스토랑에서 아침 식사 2회");
+translated = translated.replace(/3회 점심 세트/g, "점심 정식 3회");
+translated = translated.replace(/2세트 저녁 식사/g, "저녁식사 정식 2회");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
