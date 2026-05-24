@@ -563,8 +563,12 @@ translated = translated.replace(/, 북극에서 잊을 수 없는 한 주 동안
 translated = translated.replace(/귀국 준비를 합니다./g, "");
 translated = translated.replace(/. 이 경로는 Sassendalen과 Adventdalen의/g, "으로 돌아갈 준비를 합니다. 이 경로는 Sassendalen과 Adventdalen의")
 translated = translated.replace(/엽서를 보낼 수 있는 완벽한 기회입니다/g, "엽서를 보낼 수 있는 좋은 기회입니다");
-translated = translated.replace(/에서 4박/g, "4박 동안의");
+translated = translated.replace(/에서 4박/g, "4박 동안의 ");
 translated = translated.replace(/트윈\/DBL 숙소/g, "트윈룸/더블룸");
+translated = translated.replace(/에서 2박/g, "2박 동안의 ");
+translated = translated.replace(/7 점심 정식/g, "점심 정식 7회");
+translated = translated.replace(/7 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 저녁 식사 정식 7회");
+translated = translated.replace(/1 맥주 시음/g, "맥주 시음 1회");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
