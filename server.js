@@ -520,7 +520,7 @@ translated = translated.replace(/투어시 이메일을 보내주세요/g, "투�
 translated = translated.replace(/날짜에 대해 문의합니다/g, "으로 부탁드립니다");
 translated = translated.replace(/경험 없음/g, "초보자도");
 translated = translated.replace(/필수의/g, "참여 가능");
-translated = translated.replace(/어린이 이용 가능/g, "14세 이상의 어린이부터");
+translated = translated.replace(/어린이 이용 가능/g, "14세 이상의 어린이");
 translated = translated.replace(/14세부터/g, "참여 가능");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
