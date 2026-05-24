@@ -545,6 +545,11 @@ translated = translated.replace(/투어에 참여할 수 있습니다./g, "투�
 translated = translated.replace(/기회를 갖게 될 것입니다./g, "기회를 갖게 될 것입니다: ");
 translated = translated.replace(/하루 종일 스노모빌 탐험을 시작했습니다./g, "");
 translated = translated.replace(/— 길을 따라 빙하, 계곡,/g, "으로의 하루가 꼬박 걸리는 스노모빌 탐험을 시작합니다— 길을 따라 빙하, 계곡,");
+translated = translated.replace(/하이라이트 중 하나는 바로/g, "하이라이트 중 하나는 바로 ");
+translated = translated.replace(/우뚝 솟은 푸른 얼음벽이 있는/g, "이며, 이곳은 우뚝 솟은 푸른 얼음벽이 있는");
+translated = translated.replace(/자연으로 둘러싸인 현장에서/g, "자연으로 둘러싸인 야외에서");
+translated = translated.replace(/저녁이 되자 우리는/g, "저녁이 되면 우리는");
+translated = translated.replace(/NOK 저녁 식사/g, "잘 준비된 저녁 식사");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
