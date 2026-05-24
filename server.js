@@ -543,6 +543,8 @@ translated = translated.replace(/약 95~110km이며 트레일에서/g, "약 95~1
 translated = translated.replace(/현재는 스노모빌이 없기 때문에 여유롭게 여유롭게/g, "오늘은 스노모빌 여행을 하지 않기 때문에");
 translated = translated.replace(/투어에 참여할 수 있습니다./g, "투어에 참여할 수 있습니다: ");
 translated = translated.replace(/기회를 갖게 될 것입니다./g, "기회를 갖게 될 것입니다: ");
+translated = translated.replace(/하루 종일 스노모빌 탐험을 시작했습니다./g, "");
+translated = translated.replace(/— 길을 따라 빙하, 계곡,/g, "으로의 하루가 꼬박 걸리는 스노모빌 탐험을 시작합니다— 길을 따라 빙하, 계곡,");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
