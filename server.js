@@ -562,6 +562,7 @@ translated = translated.replace(/곳에서 가이드와 함께 저녁 식사를 
 translated = translated.replace(/, 북극에서 잊을 수 없는 한 주 동안의/g, "에서 가이드와 함께 저녁 식사를 하며, 북극에서 잊을 수 없는 한 주 동안의");
 translated = translated.replace(/귀국 준비를 합니다./g, "");
 translated = translated.replace(/. 이 경로는 Sassendalen과 Adventdalen의/g, "으로 돌아갈 준비를 합니다. 이 경로는 Sassendalen과 Adventdalen의")
+translated = translated.replace(/엽서를 보낼 수 있는 완벽한 기회입니다/g, "엽서를 보낼 수 있는 좋은 기회입니다");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
