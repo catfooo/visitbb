@@ -535,6 +535,8 @@ translated = translated.replace(/는 한때 스발바르 제도와/g, "로의 �
 translated = translated.replace(/역사적인 이전 라디오/g, "역사적인 라디오");
 translated = translated.replace(/에서 점심을 즐길 것이다/g, "");
 translated = translated.replace(/, 북극의 매력을 지닌 아늑하고/g, "에서 점심을 즐기고, 북극의 매력을 지닌 아늑하고");
+translated = translated.replace(/, 마을을 탐험하거나 하루의 모험을/g, "로 돌아와, 마을을 탐험하거나 하루의 모험을");
+translated = translated.replace(/또 다른 밤은 호텔에서/g, "두 번째 날의 밤은 호텔에서 보내게 됩니다: ");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
