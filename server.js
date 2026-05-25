@@ -623,6 +623,8 @@ translated = translated.replace(/1 레스토랑에서 저녁 식사 세트/g, "�
 translated = translated.replace(/경로로 Tempelfjorden으로 출발/g, "Tempelfjorden으로 출발 경로");
 translated = translated.replace(/탐험 점심 식사/g, "야외 점심 식사");
 translated = translated.replace(/현장에서 점심 1세트/g, "탐험 현장에서 1회의 점심 식사");
+translated = translated.replace(/스노모빌 1일/g, "1일 동안의 스노모빌 투어");
+translated = translated.replace(/경로로 Colesbay로 출발/g, "Colesbay로 출발 경로");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
