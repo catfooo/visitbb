@@ -596,9 +596,15 @@ if ($(el).attr("field") === "tn_text_1725980849562") {
 translated = translated.replace(/스노모빌로/g, "스노모빌 출발");
 translated = translated.replace(/방문과 함께 마을 주변의 가이드 투어/g, "마을 주변을 가이드 투어하며 방문하기: ");
 translated = translated.replace(/방문할 수 있는 옵션/g, "방문할 수 있는 옵션: ");
-if (text.includes("아트 북극 갤러리") && text.includes("시네마 투어")) {
-  translated = translated.replace(/아니면/g, " 혹은 ");
-}
+//x
+// if (text.includes("아트 북극 갤러리") && text.includes("시네마 투어")) {
+//   translated = translated.replace(/아니면/g, " 혹은 ");
+// }
+$("li").contents().each(function () {
+  if (this.type === "text" && this.data.includes("아니면")) {
+    this.data = this.data.replace(/아니면/g, "");
+  }
+});
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
