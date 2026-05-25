@@ -612,6 +612,8 @@ translated = translated.replace(/경로로 롱이어비엔으로 출발/g, "롱�
 translated = translated.replace(/3 점심 세트/g, "점심 정식 3회");
 translated = translated.replace(/2 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 저녁식사 정식 2회");
 translated = translated.replace(/아름다운 북극 풍경으로 둘러싸인 탄광이 있는/g, "아름다운 북극 풍경으로 둘러싸인, 탄광이 있는");
+translated = translated.replace(/특급열차/g, "익스프레스");
+translated = translated.replace(/바렌츠부르크까지 2일/g, "바렌츠부르크로 향하는 2일 동안의");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
