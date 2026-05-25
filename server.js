@@ -620,6 +620,9 @@ translated = translated.replace(/에서 1박/g, "하루 동안 숙박: ");
 translated = translated.replace(/1 레스토랑에서 아침 식사/g, "레스토랑에서 아침 식사 1회");
 translated = translated.replace(/2인 세트 점심/g, "점심 정식 2회");
 translated = translated.replace(/1 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 저녁 식사 1회");
+translated = translated.replace(/경로로 Tempelfjorden으로 출발/g, "Tempelfjorden으로 출발 경로");
+translated = translated.replace(/탐험 점심 식사/g, "야외 점심 식사");
+translated = translated.replace(/현장에서 점심 1세트/g, "탐험 현장에서 1회의 점심 식사");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
