@@ -609,6 +609,8 @@ translated = translated.replace(/그린란드까지 스노모빌 여행/g, "그�
 translated = translated.replace(/가이드 방문/g, "가이드 투어: ");
 translated = translated.replace(/당신은 다음과 같은 기회를 갖게 될 것입니다/g, "");
 translated = translated.replace(/경로로 롱이어비엔으로 출발/g, "롱이어비엔으로 출발 경로");
+translated = translated.replace(/3 점심 세트/g, "점심 정식 3회");
+translated = translated.replace(/2 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 저녁식사 정식 2회");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
