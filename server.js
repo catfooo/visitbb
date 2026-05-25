@@ -241,7 +241,8 @@ translated = translated.replace(/10월 첫째 주 이후에는 투어를 일시 
 translated = translated.replace(/피라미덴로/g, "피라미덴으로");
 translated = translated.replace(/피라미덴를/g, "피라미덴을");
 translated = translated.replace(/정착지/g, "마을");
-translated = translated.replace(/충분한/g, "NOK");
+//this causing problem... first need to find its staring point
+//translated = translated.replace(/충분한/g, "NOK");
 translated = translated.replace(/90 NOK0/g, "900 NOK");
 translated = translated.replace(/금발/g, "블론드");
 translated = translated.replace(/몰래 플래터/g, "스낵 플래터");
