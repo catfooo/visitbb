@@ -606,6 +606,9 @@ $("li").contents().each(function () {
   }
 });
 translated = translated.replace(/그린란드까지 스노모빌 여행/g, "그린란드해까지 스노모빌 여행");
+translated = translated.replace(/가이드 방문/g, "가이드 투어: ");
+translated = translated.replace(/당신은 다음과 같은 기회를 갖게 될 것입니다/g, "");
+translated = translated.replace(/경로로 롱이어비엔으로 출발/g, "롱이어비엔으로 출발 경로");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
