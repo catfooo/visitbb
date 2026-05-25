@@ -629,6 +629,8 @@ translated = translated.replace(/이용 가능 날짜/g, "여행 가능 날짜 �
 translated = translated.replace(/경로별/g, "로부터 출발 경로");
 translated = translated.replace(/출발지/g, "");
 translated = translated.replace(/ 어드벤처를 타고/g, "을 타고 모험하며");
+translated = translated.replace(/스노모빌을 타고/g, "스노모빌 탑승");
+translated = translated.replace(/투어가 종료되는 Russkiy Dom으로/g, "투어가 종료되면 Russkiy Dom으로");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
