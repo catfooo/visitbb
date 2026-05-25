@@ -602,7 +602,7 @@ translated = translated.replace(/방문할 수 있는 옵션/g, "방문할 수 �
 // }
 $("li").contents().each(function () {
   if (this.type === "text" && this.data.includes("아니면")) {
-    this.data = this.data.replace(/아니면/g, "");
+    this.data = this.data.replace(/아니면/g, " 혹은 ");
   }
 });
 // translated = translated.replace(/Grumant/g, "그루만트");
