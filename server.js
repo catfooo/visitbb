@@ -605,6 +605,7 @@ $("li").contents().each(function () {
     this.data = this.data.replace(/아니면/g, " 혹은 ");
   }
 });
+translated = translated.replace(/그린란드까지 스노모빌 여행/g, "그린란드해까지 스노모빌 여행");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
