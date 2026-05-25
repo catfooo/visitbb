@@ -632,6 +632,7 @@ translated = translated.replace(/ 어드벤처를 타고/g, "을 타고 모험�
 translated = translated.replace(/스노모빌을 타고/g, "스노모빌 탑승");
 translated = translated.replace(/투어가 종료되는 Russkiy Dom으로/g, "투어가 종료되면 Russkiy Dom으로");
 translated = translated.replace(/3시간 스노모빌 투어/g, "3시간 동안의 스노모빌 투어");
+translated = translated.replace(/ 눈 덮힌 곳은 스노모빌 여행에 충분하지 않으며/g, "은 스노모빌 여행에 충분할 정도로 눈이 많이 덮여 있지 않으며");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
