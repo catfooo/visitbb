@@ -614,6 +614,12 @@ translated = translated.replace(/2 레스토랑에서 저녁 식사 세트/g, "�
 translated = translated.replace(/아름다운 북극 풍경으로 둘러싸인 탄광이 있는/g, "아름다운 북극 풍경으로 둘러싸인, 탄광이 있는");
 translated = translated.replace(/특급열차/g, "익스프레스");
 translated = translated.replace(/바렌츠부르크까지 2일/g, "바렌츠부르크로 향하는 2일 동안의");
+translated = translated.replace(/정착촌/g, "마을");
+translated = translated.replace(/2027년 출시 날짜는/g, "2027년 여행 가능 날짜는");
+translated = translated.replace(/에서 1박/g, "하루 동안 숙박: ");
+translated = translated.replace(/1 레스토랑에서 아침 식사/g, "레스토랑에서 아침 식사 1회");
+translated = translated.replace(/2인 세트 점심/g, "점심 정식 2회");
+translated = translated.replace(/1 레스토랑에서 저녁 식사 세트/g, "레스토랑에서 저녁 식사 1회");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
