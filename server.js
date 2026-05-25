@@ -243,8 +243,15 @@ translated = translated.replace(/피라미덴를/g, "피라미덴을");
 translated = translated.replace(/정착지/g, "마을");
 //this causing problem... first need to find its staring point
 //translated = translated.replace(/충분한/g, "NOK");
-translated = translated.replace(/1 050충분한/g, "1 050 NOK");
-translated = translated.replace(/1 500충분한/g, "1 500 NOK");
+//not works bcs of tag inbetween
+//translated = translated.replace(/1 050충분한/g, "1 050 NOK");
+//translated = translated.replace(/1 500충분한/g, "1 500 NOK");
+if ($(el).attr("field") === "tn_text_1730453742642") {
+  translated = translated.replace(/충분한/g, "NOK");
+}
+if ($(el).attr("field") === "tn_text_1730453746039") {
+  translated = translated.replace(/충분한/g, "NOK");
+}
 translated = translated.replace(/90 NOK0/g, "900 NOK");
 translated = translated.replace(/금발/g, "블론드");
 translated = translated.replace(/몰래 플래터/g, "스낵 플래터");
