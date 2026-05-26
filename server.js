@@ -3,6 +3,8 @@ const cheerio = require("cheerio");
 const puppeteer = require("puppeteer-core");
 // const puppeteer = require("puppeteer");
 const chromium = require("@sparticuz/chromium");
+// const Tesseract = require("tesseract.js");
+// const sharp = require("sharp");
 
 const app = express();
 
@@ -643,6 +645,12 @@ translated = translated.replace(/스노모빌을 타고/g, "스노모빌 탑승"
 translated = translated.replace(/투어가 종료되는 Russkiy Dom으로/g, "투어가 종료되면 Russkiy Dom으로");
 translated = translated.replace(/3시간 스노모빌 투어/g, "3시간 동안의 스노모빌 투어");
 translated = translated.replace(/ 눈 덮힌 곳은 스노모빌 여행에 충분하지 않으며/g, "은 스노모빌 여행에 충분할 정도로 눈이 많이 덮여 있지 않으며");
+translated = translated.replace(/TRUST ARCTICUGOL 회사의/g, "TRUST ARCTICUGOL의");
+translated = translated.replace(/TRUST ARCTICUGOL\(Arctic Coal\) 회사는/g, "TRUST ARCTICUGOL(Arctic Coal)은");
+translated = translated.replace(/구소련 광산 지분/g, "구소련 시대 광산 지분");
+translated = translated.replace(/광산은 2011년까지/g, "광산은 2011년에");
+translated = translated.replace(/다각화하기로 결정될 때까지/g, "다각화하기로 결정되기 전까지");
+translated = translated.replace(/인프라 소유자였습니다./g, "인프라 소유자였습니다. 다음을 참조해 보세요: ");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
