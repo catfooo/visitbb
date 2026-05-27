@@ -651,6 +651,12 @@ translated = translated.replace(/구소련 광산 지분/g, "구소련 시대 �
 translated = translated.replace(/광산은 2011년까지/g, "광산은 2011년에");
 translated = translated.replace(/다각화하기로 결정될 때까지/g, "다각화하기로 결정되기 전까지");
 translated = translated.replace(/인프라 소유자였습니다./g, "인프라 소유자였습니다. 다음을 참조해 보세요: ");
+translated = translated.replace(/5월 초까지 스노모빌 출발만/g, "5월 초까지 스노모빌로만");
+translated = translated.replace(/접근할 수 있습니다. 우리의/g, "접근할 수 있습니다. 우리의 ");
+translated = translated.replace(/스노모빌 탑승 숨막히는 북극 풍경을 감상하고/g, "스노모빌에 탑승하여 숨이 멎을 정도로 아름다운 북극 풍경을 감상하고");
+translated = translated.replace(/구소련 수행원의 분위기를 방해하지 않도록/g, "소련 시대 특유의 분위기를 해치지 않기 위해");
+translated = translated.replace(/기후로 인해 마을가 잘 보존되어 있어/g, "기후로 인해 마을이 잘 보존되어 있어");
+translated = translated.replace(/마을이 불과 며칠 전에 떠난 것처럼/g, "마을의 주민들이 불과 며칠 전에 떠난 것처럼");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
