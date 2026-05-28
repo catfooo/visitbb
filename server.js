@@ -3,8 +3,8 @@ const cheerio = require("cheerio");
 const puppeteer = require("puppeteer-core");
 // const puppeteer = require("puppeteer");
 const chromium = require("@sparticuz/chromium");
-// const Tesseract = require("tesseract.js");
-// const sharp = require("sharp");
+const Tesseract = require("tesseract.js");
+const sharp = require("sharp");
 
 const app = express();
 
@@ -95,6 +95,35 @@ console.log("Final URL:", page.url());
     let html = await page.content();
 
     const $ = cheerio.load(html);
+
+    //Find all images: + download img buffer + OCR the image: + Translate:
+    $("img").each(async function () {
+      const src = $(this).attr("src");
+    
+      if (!src) return;
+    
+      const fullSrc = src.startsWith("http")
+        ? src
+        : "https://goarctica.com" + src;
+    
+      const response = await fetch(fullSrc);
+      const arrayBuffer = await response.arrayBuffer();
+      const buffer = Buffer.from(arrayBuffer);
+    
+      const result = await Tesseract.recognize(buffer, "eng");
+    
+      //console.log(result.data.text);
+
+      const originalText = result.data.text;
+
+  console.log("OCR:");
+  console.log(originalText);
+
+  const translated = await translateText(originalText);
+
+  console.log("TRANSLATED:");
+  console.log(translated);
+    });
 
     // bypass tilda word injection
     $("*").each(function () {
