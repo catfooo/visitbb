@@ -109,6 +109,22 @@ console.log("Final URL:", page.url());
       const response = await fetch(fullSrc);
       const arrayBuffer = await response.arrayBuffer();
       const buffer = Buffer.from(arrayBuffer);
+
+      //skip tiny images before OCR:
+      const metadata = await sharp(buffer).metadata();
+
+      if (metadata.width < 300 || metadata.height < 300) {
+        return; // skip tiny images
+      }
+
+      // preprocess image for OCR
+const processed = await sharp(buffer)
+.resize({ width: 1600 }) // upscale small text
+.grayscale()
+.normalize()
+.sharpen()
+.threshold(180)
+.toBuffer();
     
       const result = await Tesseract.recognize(buffer, "eng");
     
