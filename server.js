@@ -97,10 +97,11 @@ console.log("Final URL:", page.url());
 
     const $ = cheerio.load(html);
 
+// translated img for pyramiden    
 $("#rec797019210 .t107").append(`
   <div style="margin-top:20px; text-align:center;">
     <img 
-      src="/images/1.jpg"
+      src="/images/2.png"
       style="max-width:100%; height:auto;"
       alt=""
     >
