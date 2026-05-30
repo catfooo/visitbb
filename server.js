@@ -3,8 +3,8 @@ const cheerio = require("cheerio");
 const puppeteer = require("puppeteer-core");
 // const puppeteer = require("puppeteer");
 const chromium = require("@sparticuz/chromium");
-const Tesseract = require("tesseract.js");
-const sharp = require("sharp");
+// const Tesseract = require("tesseract.js");
+// const sharp = require("sharp");
 
 const app = express();
 
@@ -96,52 +96,52 @@ console.log("Final URL:", page.url());
 
     const $ = cheerio.load(html);
 
-    //Find all images: + download img buffer + OCR the image: + Translate:
-    $("img").each(async function () {
-      const src = $(this).attr("src");
+//     //Find all images: + download img buffer + OCR the image: + Translate:
+//     $("img").each(async function () {
+//       const src = $(this).attr("src");
     
-      if (!src) return;
+//       if (!src) return;
     
-      const fullSrc = src.startsWith("http")
-        ? src
-        : "https://goarctica.com" + src;
+//       const fullSrc = src.startsWith("http")
+//         ? src
+//         : "https://goarctica.com" + src;
     
-      const response = await fetch(fullSrc);
-      const arrayBuffer = await response.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
+//       const response = await fetch(fullSrc);
+//       const arrayBuffer = await response.arrayBuffer();
+//       const buffer = Buffer.from(arrayBuffer);
 
-      //skip tiny images before OCR:
-      const metadata = await sharp(buffer).metadata();
+//       //skip tiny images before OCR:
+//       const metadata = await sharp(buffer).metadata();
 
-      if (metadata.width < 300 || metadata.height < 300) {
-        return; // skip tiny images
-      }
+//       if (metadata.width < 300 || metadata.height < 300) {
+//         return; // skip tiny images
+//       }
 
-      // preprocess image for OCR
-const processed = await sharp(buffer)
-.resize({ width: 1600 }) // upscale small text
-.grayscale()
-.normalize()
-.sharpen()
-.threshold(180)
-.toBuffer();
+//       // preprocess image for OCR
+// const processed = await sharp(buffer)
+// .resize({ width: 1600 }) // upscale small text
+// .grayscale()
+// .normalize()
+// .sharpen()
+// .threshold(180)
+// .toBuffer();
     
-      const result = await Tesseract.recognize(buffer, "eng");
+//       const result = await Tesseract.recognize(buffer, "eng");
     
-      //console.log(result.data.text);
+//       //console.log(result.data.text);
 
-      const originalText = result.data.text;
+//       const originalText = result.data.text;
 
-  console.log("OCR:");
-  console.log(originalText);
+//   console.log("OCR:");
+//   console.log(originalText);
 
-  const translated = await translateText(originalText);
+//   const translated = await translateText(originalText);
 
-  console.log("TRANSLATED:");
-  console.log(translated);
-    });
+//   console.log("TRANSLATED:");
+//   console.log(translated);
+//     });
 
-    // bypass tilda word injection
+    // bypass tilda word injection//not working
     $("*").each(function () {
       const el = $(this);
       const html = el.html();
