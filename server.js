@@ -713,6 +713,18 @@ translated = translated.replace(/스노모빌 탑승 숨막히는 북극 풍경�
 translated = translated.replace(/구소련 수행원의 분위기를 방해하지 않도록/g, "소련 시대 특유의 분위기를 해치지 않기 위해");
 translated = translated.replace(/기후로 인해 마을가 잘 보존되어 있어/g, "기후로 인해 마을이 잘 보존되어 있어");
 translated = translated.replace(/마을이 불과 며칠 전에 떠난 것처럼/g, "마을의 주민들이 불과 며칠 전에 떠난 것처럼");
+translated = translated.replace(/물개, 해마, 순록, 북극 여우를/g, "물개, 바다코끼리, 순록, 북극 여우를");
+translated = translated.replace(/그러므로 죽을 것 같으면 다른 곳으로 가서 죽으십시오./g, "그래서 이곳에서는 임종을 맞을 수 없으며, 그러니 마지막을 맞이할 때는, 다른 곳에서 생을 마감해야 합니다.");
+//translation fix made list of settlements disappear
+translated = translated.replace(/같은 마을 외부에는 도로가 없습니다/g, "롱이어비엔, 바렌츠부르크, 뉘올레순 같은 마을 외부에는 도로가 없습니다");
+translated = translated.replace(/그룹의 섬은 북위/g, "군도는 북위");
+translated = translated.replace(/스발바르 제도에서 인간 활동은/g, "스발바르 제도에서 인간에 의해 이루어진 활동은");
+translated = translated.replace(/파견되었으며 그 중 상당 부분이/g, "파견되었으며 그 중 상당수가");
+translated = translated.replace(/2008년 Trust Arcticugol에 의해 부활한/g, "2008년 Trust Arcticugol에 의해 다시 활성화된");
+translated = translated.replace(/겨울에는 스노모빌 출발/g, "겨울에는 스노모빌로 오는");
+translated = translated.replace(/개조된 문화의 전당, 호텔 및 바를 통해/g, "새롭게 단장된 문화의 전당, 호텔 및 바를 통해");
+translated = translated.replace(/5월 초까지 스노모빌 출발만 피라미덴에/g, "5월 초까지 스노모빌로만 피라미덴에");
+translated = translated.replace(/스노모빌 탑승 숨막히는 북극 풍경을 감상하고/g, "스노모빌에 탑승하여 숨막히는 북극 풍경을 감상하고");
 // translated = translated.replace(/Grumant/g, "그루만트");
 
 
