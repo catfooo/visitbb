@@ -7,6 +7,7 @@ const chromium = require("@sparticuz/chromium");
 // const sharp = require("sharp");
 
 const app = express();
+app.use(express.static("public"));
 
 const cache = new Map();
 //const CACHE_TTL = 1000 * 60 * 60; // 60 minutes
@@ -95,6 +96,16 @@ console.log("Final URL:", page.url());
     let html = await page.content();
 
     const $ = cheerio.load(html);
+
+$("#rec797019210 .t107").append(`
+  <div style="margin-top:20px; text-align:center;">
+    <img 
+      src="/images/1.jpg"
+      style="max-width:100%; height:auto;"
+      alt=""
+    >
+  </div>
+`);
 
 //     //Find all images: + download img buffer + OCR the image: + Translate:
 //     $("img").each(async function () {
