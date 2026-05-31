@@ -662,7 +662,15 @@ if ($(el).attr("field") === "tn_text_1725980849562") {
   translated = translated.replace(/편안한 호텔/g, "편안한");
   translated = translated.replace(/숙소/g, "호텔 숙박");
 }
+// this was added for describe travel route easily, but causing non necessary text switch several times. need to look after  
 translated = translated.replace(/스노모빌로/g, "스노모빌 출발");
+// (memo from past)might related to switched '출발'
+// since I already have this,
+// translated = translated.replace(/스노모빌로 출발/g, "스노모빌로 ");
+// lets add this in future
+// translated = translated.replace(/스노모빌 출발/g, "스노모빌로 "); <- loop starts
+// and this is why i see sometimes '스노모빌 출발 출발', so problem starts that you wanted to add '출발' too much easily .. hows the original translation?
+
 translated = translated.replace(/방문과 함께 마을 주변의 가이드 투어/g, "마을 주변을 가이드 투어하며 방문하기: ");
 translated = translated.replace(/방문할 수 있는 옵션/g, "방문할 수 있는 옵션: ");
 //x
