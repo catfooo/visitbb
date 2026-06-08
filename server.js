@@ -800,7 +800,7 @@ if (lastTextNode2 && lastTextNode2.data.trim() === ".") {
 
     
     $("body").append(`
-    <a href="/test.html">Testtt page</a>
+    <a href="https://catfooo.github.io/visitbb/test.html">Test page</a>
 <script>
 // tilda slide fix
 // ✅ slider CSS
