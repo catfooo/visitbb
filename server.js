@@ -108,6 +108,13 @@ $("#rec797019210 .t107").append(`
   </div>
 `);
 
+// replace translated img at when-to-visit
+$(".t107 img").attr({
+  src: "images/3.png",
+  "data-original": "images/3.png",
+  "data-img-zoom-url": "images/3.png"
+});
+
 //     //Find all images: + download img buffer + OCR the image: + Translate:
 //     $("img").each(async function () {
 //       const src = $(this).attr("src");
