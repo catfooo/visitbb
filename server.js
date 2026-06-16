@@ -979,7 +979,9 @@ app.listen(PORT, () => {
   console.log("Server running");
 });
 
-if (process.env.NODE_ENV === "production") {
+// no ping for northflank deploy
+//if (process.env.NODE_ENV === "production") {
+if (process.env.NORTHFLANK === "false") {
   setInterval(() => {
     // fetch("https://barentsburg.onrender.com")
     fetch("https://visitbb.up.railway.app")
