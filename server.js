@@ -87,8 +87,7 @@ app.use(async (req, res) => {
 
     await page.goto(targetUrl, {
       waitUntil: "networkidle2", 
-      //timeout: 120000,
-      timeout: 0
+      timeout: 120000
     });
 
     console.log("Requested:", targetUrl);
