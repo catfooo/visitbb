@@ -86,7 +86,7 @@ app.use(async (req, res) => {
     const targetUrl = "https://goarctica.com" + req.originalUrl;
 
     await page.goto(targetUrl, {
-      waitUntil: "domcontentloaded", 
+      waitUntil: "networkidle2", 
       timeout: 120000
     });
 
