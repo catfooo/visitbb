@@ -507,7 +507,7 @@ translated = translated.replace(/개조된 문화의 전당, 호텔 및 바를 �
 translated = translated.replace(/5월 초까지 스노모빌 출발만 피라미덴에/g, "5월 초까지 스노모빌로만 피라미덴에");
 translated = translated.replace(/스노모빌 탑승 숨막히는 북극 풍경을 감상하고/g, "스노모빌에 탑승하여 숨막히는 북극 풍경을 감상하고");
 // translated = translated.replace(/Grumant/g, "그루만트");
-
+return translated;
 
 }
 
