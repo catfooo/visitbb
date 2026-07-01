@@ -5,7 +5,7 @@ const puppeteer = require("puppeteer-core");
 const chromium = require("@sparticuz/chromium");
 // const Tesseract = require("tesseract.js");
 // const sharp = require("sharp");
-const translation = require(translation.js);
+const translation = require("./translation.js");
 
 const app = express();
 app.use(express.static("public"));
