@@ -1,4 +1,4 @@
-function translation(translated, el) {
+function translation(translated, el, $) {
     // ✅ POST-FIX (after translation)
 translated = translated.replace(/바렌츠버그/g, "바렌츠부르크");
 translated = translated.replace(/해야 할 일/g, "즐길 거리");

@@ -228,7 +228,7 @@ if (overrides[lower]) {
 // ✅ otherwise translate
 let translated = await translateText(text);
 
-translated = translation(translated, el)
+translated = translation(translated, el, $)
 
 // translation block
 
