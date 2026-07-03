@@ -64,6 +64,13 @@ async function getBrowser() {
     }
 
     browser = launched;
+
+    browser.on("disconnected", () => {
+      console.log("Browser disconnected");
+      browser = null;
+      browserPromise = null;
+    });
+
     browserPromise = null;
 
     return browser;
