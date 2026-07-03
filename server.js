@@ -35,27 +35,41 @@ const overrides = {
 };
 
 let browser;
+let browserPromise;
 
 async function getBrowser() {
   if (browser) return browser;
 
-  const isProd = process.env.NODE_ENV === "production";
-
-  if (isProd) {
-    browser = await puppeteer.launch({
-      args: chromium.args,
-      defaultViewport: chromium.defaultViewport,
-      executablePath: await chromium.executablePath(),
-      headless: chromium.headless,
-    });
-  } else {
-    const puppeteer = require("puppeteer"); // full version for local
-  browser = await puppeteer.launch({
-    headless: true,
-  });
+  if (browserPromise) {
+    return browserPromise;
   }
 
-  return browser;
+  browserPromise = (async () => {
+    const isProd = process.env.NODE_ENV === "production";
+
+    let launched;
+
+    if (isProd) {
+      launched = await puppeteer.launch({
+        args: chromium.args,
+        executablePath: await chromium.executablePath(),
+        defaultViewport: chromium.defaultViewport,
+        headless: chromium.headless,
+      });
+    } else {
+      const puppeteer = require("puppeteer");
+      launched = await puppeteer.launch({
+        headless: true,
+      });
+    }
+
+    browser = launched;
+    browserPromise = null;
+
+    return browser;
+  })();
+
+  return browserPromise;
 }
 
 app.use(async (req, res) => {
