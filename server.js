@@ -102,19 +102,15 @@ app.use(async (req, res) => {
   let page;
 
   try {
-    console.log("Creating page...");
     page = await browser.newPage();
-    console.log("Page created");
 
     const targetUrl = "https://goarctica.com" + req.originalUrl;
 
-    console.log("Before goto");
     await page.goto(targetUrl, {
       //waitUntil: "networkidle2", 
       waitUntil: "domcontentloaded", 
       timeout: 120000
     });
-    console.log("After goto");
 
     console.log("Requested:", targetUrl);
 console.log("Final URL:", page.url());
