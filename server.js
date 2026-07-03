@@ -3,8 +3,6 @@ const cheerio = require("cheerio");
 const puppeteer = require("puppeteer-core");
 // const puppeteer = require("puppeteer");
 const chromium = require("@sparticuz/chromium");
-// const Tesseract = require("tesseract.js");
-// const sharp = require("sharp");
 const translation = require("./translation.js");
 const domfix = require("./domfix.js");
 
